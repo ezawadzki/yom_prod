@@ -68,20 +68,20 @@ export default {
                 { title: 'Menu', url: '/menu' },
                 { title: 'Profile', url: '/about' },
                 { title: 'Sign In', url: '/sign-in' },
-                { title: 'Join', url: '/join' }
-            ]
+                { title: 'Join', url: '/join' },
+            ],
         };
     },
     computed: {
         isAuthenticated() {
             return this.$store.getters.isAuthenticated;
-        }
+        },
     },
     methods: {
         logout() {
             this.$store.dispatch('userSignOut');
-        }
-    }
+        },
+    },
 };
 </script>
 

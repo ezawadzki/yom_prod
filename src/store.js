@@ -12,7 +12,8 @@ export default new Vuex.Store({
         apiUrl: 'https://api.edamam.com/search',
         user: null,
         isAuthenticated: false,
-        userRecipes: []
+        userRecipes: [],
+        language: 'FR'
     },
     mutations: {
         setRecipes(state, payload) {
@@ -26,9 +27,17 @@ export default new Vuex.Store({
         },
         setUserRecipes(state, payload) {
             state.userRecipes = payload;
+        },
+        setLanguage(state, language) {
+            state.language = language;
         }
     },
     actions: {
+        setUserLanguage({ commit }, l) {
+            console.log("setUserLanguage", l)
+            commit('setLanguage', l);
+        },
+
         async getRecipes({ state, commit }, plan) {
             try {
                 let response = await axios.get(`${state.apiUrl}`, {
@@ -119,6 +128,9 @@ export default new Vuex.Store({
     getters: {
         isAuthenticated(state) {
             return state.user !== null && state.user !== undefined;
-        }
+        },
+        userLanguage: state => {
+            return state.language;
+        },
     }
 });
