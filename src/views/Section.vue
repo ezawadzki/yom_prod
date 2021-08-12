@@ -1,10 +1,12 @@
 <template>
     <b-container fluid="sm">
         <b-row>
-            currentStep {{ currentStep }}<br />
+            currentStep {{ currentStep }} <br />
             <b-col>
                 <Question
                     v-bind:text="this.sections[currentStep][language]"
+                    v-bind:type="this.sections[currentStep]['type']"
+                    v-bind:answer="this.sections[currentStep]['answer']"
                     @clicked="onClickChild"
                 ></Question>
             </b-col>

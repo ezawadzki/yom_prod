@@ -2,6 +2,8 @@
     <div>
         <div>
             {{ text }}
+            {{ type }}
+            {{ answer }}
             <br />
             <button type="button" @click.prevent="goToStep()">continue</button>
         </div>
@@ -11,7 +13,7 @@
 <script>
 export default {
     name: 'Question',
-    props: ['id', 'text'],
+    props: ['text', 'type', 'answer'],
     data() {
         return {
             currentStep: 0,
