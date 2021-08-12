@@ -1,0 +1,110 @@
+[
+  {
+    "FR": "Êtes-vous satisfait de l’onctuosité de votre yaourt du petit déjeuner ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "yaourt"
+  },
+  {
+    "FR": "Évaluez la fraicheur de la bouteille d’eau distribuée lors du retard de votre train.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "etoile"
+  },
+  {
+    "FR": "Évaluez la croissance de vos plantes d’intérieur.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "smiley"
+  },
+  {
+    "FR": "Évaluez le bonbon gout-citron distribué en caisse du restaurant Le Soleil Levant",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "bonbon"
+  },
+  {
+    "FR": "Êtes-vous satisfait de votre dernière livraison ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "pouce"
+  },
+  {
+    "FR": "Êtes-vous satisfait de la propreté du véhicule de votre livreur ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "smiley"
+  },
+  {
+    "FR": "Évaluez votre expérience lors de votre déclaration d’impôt sur le revenu.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "etoile"
+  },
+  {
+    "FR": "Évaluez le plaisir que vous a procuré votre déclaration d’impôt.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "coeur"
+  },
+  {
+    "FR": "Avez-vous pris le temps de noter votre réparateur de machine à laver ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "outil"
+  },
+  {
+    "FR": "A quelle fréquence participez-vous aux demandes d’évaluation de service.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "etoile"
+  },
+  {
+    "FR": "Êtes-vous satisfait d’avoir noté votre réparateur de machine à laver ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "outil"
+  },
+  {
+    "FR": "Dans l’ensemble, vos notes sont-elles supérieures ou inférieures à 9/10 ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "check"
+  },
+  {
+    "FR": "Êtes-vous satisfait que votre réparateur de machine à laver ne reçoive pas de prime à cause de votre note ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "outil"
+  },
+  {
+    "FR": "Pensez-vous que les recrutements décidés par un algorithme soient plus équitables ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "pouce"
+  },
+  {
+    "FR": "Évaluez votre dernier rendez-vous chez votre praticien, c’est rapide et anonyme.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "stethoscope"
+  },
+  {
+    "FR": "Êtes-vous satisfait que les décisions de justice se fassent par un algorithme ?",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "check"
+  },
+  {
+    "FR": "Les décisions de justice décidées par un algorithme sont-elles plus équitables ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "check"
+  },
+  {
+    "FR": "Souhaitez-vous atteindre le niveau supérieur ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "coeur"
+  }
+]

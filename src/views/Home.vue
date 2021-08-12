@@ -1,13 +1,15 @@
 <template>
-    <span>
-        <!-- <home-hero></home-hero>
+    <!-- <home-hero></home-hero>
         <home-details></home-details>
         <home-plans></home-plans> -->
-
-        <div class="parent">
-            <div class="div1"><h1>Your opinion matters #2</h1></div>
-            <div class="div2"></div>
-            <div class="div3">
+    <b-container fluid="sm">
+        <b-row>
+            <b-col>
+                <h1>Your opinion matters #2</h1>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col md="6" sm="12">
                 <router-link to="/all-sections">
                     <v-toolbar-title
                         data-cy="titleBtn"
@@ -16,19 +18,19 @@
                         Je Participe
                     </v-toolbar-title>
                 </router-link>
-            </div>
-            <div class="div4">
-                <router-link to="/all-sections">
+            </b-col>
+            <b-col md="6" sm="12"
+                ><router-link to="/all-sections">
                     <v-toolbar-title
                         data-cy="titleBtn"
                         @click="setLanguage('EN')"
                     >
                         I Participate
                     </v-toolbar-title>
-                </router-link>
-            </div>
-        </div>
-    </span>
+                </router-link></b-col
+            >
+        </b-row>
+    </b-container>
 </template>
 
 <script>

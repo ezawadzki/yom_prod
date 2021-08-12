@@ -1,0 +1,98 @@
+[
+  {
+    "FR": "Regardez-vous les avis avant de choisir une pizzeria ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "pizza"
+  },
+  {
+    "FR": "Donnez-vous votre avis lorsque vous sortez de cette pizzeria ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "pizza"
+  },
+  {
+    "FR": "Évaluez l’empathie de vos voisin.es de table à la pizzeria.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "coeur"
+  },
+  {
+    "FR": "Évaluez la tonte du jardin public faite par les moutons.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "pouce"
+  },
+  {
+    "FR": "Êtes-vous responsable des tartines au petit déjeuner ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "tartine"
+  },
+  {
+    "FR": "Évaluez la mise à disposition des outils pédagogiques par le formateur dans le cadre de votre formation contre le harcèlement.",
+    "EN": "",
+    "type": "remplissage",
+    "answer": "pouce"
+  },
+  {
+    "FR": "Êtes-vous satisfait de confirmer que vous n’êtes pas un robot en identifiant des tracteurs ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "tracteur"
+  },
+  {
+    "FR": "Êtes-vous satisfait d’entrainer une Intelligence Artificielle en identifiant des tracteurs ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "tracteur"
+  },
+  {
+    "FR": "Êtes-vous satisfait de participer au développement de l’intelligence artificielle en postant vos photos ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "pouce"
+  },
+  {
+    "FR": "Êtes-vous satisfait de profiler vos “amis” en les likant ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "coeur"
+  },
+  {
+    "FR": "Êtes-vous satisfait que vos réseaux sociaux en sachent plus sur vous que vos proches ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "smiley"
+  },
+  {
+    "FR": "Participez-vous à l’ultracrépidarianisme (donner son avis tous types de sujets) ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "check"
+  },
+  {
+    "FR": "Êtes-vous satisfait du nombre de clickworkers travaillant dans l’hémisphère sud  pour nourrir les intelligences artificielles et améliorer votre prédictibilité ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "coeur"
+  },
+  {
+    "FR": "Êtes-vous satisfait de participer à la prédictibilité ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "check"
+  },
+  {
+    "FR": "Êtes-vous prédictible ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "check"
+  },
+  {
+    "FR": "Souhaitez-vous atteindre le niveau supérieur ?",
+    "EN": "",
+    "type": "binaire",
+    "answer": "coeur"
+  }
+]
