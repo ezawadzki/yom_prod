@@ -38,6 +38,11 @@ const router = new Router({
             component: () => import('./views/AllSections.vue')
         },
         {
+            path: '/section/:section_id',
+            name: 'section',
+            component: () => import('./views/Section.vue')
+        },
+        {
             path: '/join',
             name: 'join',
             component: () => import('./views/Join.vue')

@@ -13,7 +13,9 @@ export default new Vuex.Store({
         user: null,
         isAuthenticated: false,
         userRecipes: [],
-        language: 'FR'
+        language: 'FR',
+        currentSection: null,
+        currentStep: 0
     },
     mutations: {
         setRecipes(state, payload) {
@@ -30,14 +32,24 @@ export default new Vuex.Store({
         },
         setLanguage(state, language) {
             state.language = language;
+        },
+        setCurrentSection(state, section) {
+            state.currentSection = section;
+        },
+        setCurrentStep(state, step) {
+            state.currentStep = step;
         }
     },
     actions: {
         setUserLanguage({ commit }, l) {
-            console.log("setUserLanguage", l)
             commit('setLanguage', l);
         },
-
+        setUserSection({ commit }, s) {
+            commit('setCurrentSection', s);
+        },
+        setUserStep({ commit }, s) {
+            commit('setCurrentStep', s);
+        },
         async getRecipes({ state, commit }, plan) {
             try {
                 let response = await axios.get(`${state.apiUrl}`, {
