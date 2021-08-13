@@ -10,8 +10,8 @@
         </v-style>
 
         binaire {{ type }}
-        <div class="answer_1"></div>
-        <div class="answer_2"></div>
+        <div class="answer answer_1"></div>
+        <div class="answer answer_2"></div>
         <!-- <img :src="require(`@/assets/binaire/${type}/${type}vert_on.gif`)" />
         <img :src="require(`@/assets/binaire/${type}/${type}rouge_off.gif`)" /> -->
     </div>
@@ -59,6 +59,12 @@ export default {
 </script>
 
 <style scoped>
+.answer {
+    transition: all ease-out;
+}
+.answer:hover {
+    cursor: pointer;
+}
 .answer_1 {
     /* background-image: url(var(--bg-img-1)); */
     width: 10vw;
