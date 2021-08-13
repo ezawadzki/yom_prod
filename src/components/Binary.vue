@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .answer {
-    transition: all ease-out;
+    transition: all 0.1s ease-out;
 }
 .answer:hover {
     cursor: pointer;
