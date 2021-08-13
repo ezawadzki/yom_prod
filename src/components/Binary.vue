@@ -12,8 +12,9 @@
         binaire {{ type }}
         <div class="answer answer_1"></div>
         <div class="answer answer_2"></div>
-        <!-- <img :src="require(`@/assets/binaire/${type}/${type}vert_on.gif`)" />
-        <img :src="require(`@/assets/binaire/${type}/${type}rouge_off.gif`)" /> -->
+
+        <!-- <img :src="require(`@imgSrc/binaire/${type}/${type}vert_on.gif`)" /> -->
+        <!-- <img :src="require(`@/assets/binaire/${type}/${type}rouge_off.gif`)" /> -->
     </div>
 </template>
 
