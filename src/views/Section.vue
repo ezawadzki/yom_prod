@@ -1,7 +1,8 @@
 <template>
     <b-container fluid="sm">
         <b-row>
-            currentStep {{ currentStep }} <br />
+            currentStep {{ currentStep }} {{ this.sections[currentStep]['type']
+            }}<br />
             <b-col>
                 <Question
                     v-bind:text="this.sections[currentStep][language]"

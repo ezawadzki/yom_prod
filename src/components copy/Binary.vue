@@ -4,13 +4,6 @@
             {{ text }}
             {{ type }}
             {{ answer }}
-            <div v-if="type === 'binaire'">
-                <Binary v-bind:type="answer"></Binary>
-            </div>
-
-            <div v-else-if="type === 'remplissage'">
-                <Filling v-bind:type="answer"></Filling>
-            </div>
             <br />
             <button type="button" @click.prevent="goToStep()">continue</button>
         </div>
@@ -18,26 +11,9 @@
 </template>
 
 <script>
-import Binary from '@/components/Binary';
-import Filling from '@/components/Filling';
-
 export default {
     name: 'Question',
-    components: {
-        Binary,
-        Filling,
-    },
-    props: {
-        text: {
-            default: null,
-        },
-        type: {
-            default: null,
-        },
-        answer: {
-            default: null,
-        },
-    },
+    props: ['text', 'type', 'answer'],
     data() {
         return {
             currentStep: 0,
