@@ -5,14 +5,20 @@
             {{ type }}
             {{ answer }}
             <div v-if="type === 'binaire'">
-                <Binary v-bind:type="answer"></Binary>
+                <Binary
+                    v-bind:type="answer"
+                    @click.native="goToStep()"
+                ></Binary>
             </div>
 
             <div v-else-if="type === 'remplissage'">
-                <Filling v-bind:type="answer"></Filling>
+                <Filling
+                    v-bind:type="answer"
+                    @click.native="goToStep()"
+                ></Filling>
             </div>
             <br />
-            <button type="button" @click.prevent="goToStep()">continue</button>
+            <!-- <button type="button" @click.prevent="goToStep()">continue</button> -->
         </div>
     </div>
 </template>

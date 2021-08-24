@@ -51,6 +51,7 @@ export default {
     },
     data() {
         return {
+            img1: null,
             // img1: require('@/assets/binaire/yaourt/yaourtvert_off.gif'),
         };
     },
@@ -68,13 +69,13 @@ export default {
 }
 .answer_1 {
     /* background-image: url(var(--bg-img-1)); */
-    width: 10vw;
-    height: 10vw;
+    width: 170px;
+    height: 170px;
 }
 
 .answer_2 {
-    background-image: url('~@/assets/binaire/yaourt/yaourtrouge_off.gif');
-    width: 10vw;
-    height: 10vw;
+    /* background-image: url('~@/assets/binaire/yaourt/yaourtrouge_off.gif'); */
+    width: 170px;
+    height: 170px;
 }
 </style>

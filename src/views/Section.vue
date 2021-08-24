@@ -1,9 +1,10 @@
 <template>
     <b-container fluid="sm">
         <b-row>
-            currentStep {{ currentStep }} {{ this.sections[currentStep]['type']
-            }}<br />
-            <b-col>
+            <br />
+            <b-col v-if="this.sections.length">
+                currentStep {{ currentStep }}
+                {{ this.sections[currentStep]['type'] }}
                 <Question
                     v-bind:text="this.sections[currentStep][language]"
                     v-bind:type="this.sections[currentStep]['type']"
@@ -47,6 +48,7 @@ export default {
         return {
             sections: [],
             currentStep: 0,
+            type: null,
         };
     },
     mounted() {
@@ -61,6 +63,7 @@ export default {
     },
     methods: {
         onClickChild() {
+            console.log('onClickChild');
             if (this.currentStep < this.sections.length - 1) {
                 this.currentStep += 1;
             } else {
