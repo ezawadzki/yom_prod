@@ -19,16 +19,10 @@
 </template>
 
 <script>
-// Vue.component('v-style', {
-//     render: function (createElement) {
-//         return createElement('style', this.$slots.default);
-//     },
-// });
 export default {
     name: 'Binary',
     props: ['type'],
     computed: {
-        // img1: require(`@/assets/binaire/${type}/${type}vert_on.gif`),
         img1_off: function () {
             return require(`@/assets/binaire/${this.type}/${this.type}vert_off.gif`);
         },
