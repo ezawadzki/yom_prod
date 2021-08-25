@@ -37,10 +37,15 @@ export default {
         // },
     },
     watch: {
-        // currentStep: function (val) {
-        //     console.log('val', val);
-        //     this.currentStep = this.$store.getters.currentStep;
-        // },
+        currentStep: function (val) {
+            console.log('currentStep', val);
+            // this.currentStep = this.$store.getters.currentStep;
+            // check end of section
+
+            // store which category done
+
+            // compare length of catergory done to < 4
+        },
     },
     props: ['section_id'],
 
@@ -51,9 +56,11 @@ export default {
             type: null,
         };
     },
-    mounted() {
+    async mounted() {
         this.$store.dispatch('setUserSection', this.$route.params.section_id);
-        this.sections = require(`../data/${this.$route.params.section_id}.json`);
+        this.sections =
+            await require(`../data/${this.$route.params.section_id}.json`);
+        this.$store.dispatch('setUserCurrSectionLength', this.sections.length);
     },
     created: function () {
         // `this` est une référence à l'instance de vm

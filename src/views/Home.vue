@@ -2,33 +2,43 @@
     <!-- <home-hero></home-hero>
         <home-details></home-details>
         <home-plans></home-plans> -->
-    <b-container fluid="sm">
-        <b-row>
-            <b-col>
-                <h1>Your opinion matters #2</h1>
+    <b-container>
+        <b-row align-h="center" class="header">
+            <b-col md="8" sm="12">
+                <h1>
+                    <b-img
+                        :src="require('@/assets/navigation/logo/logo_YOM.png')"
+                        fluid
+                    />
+                </h1>
             </b-col>
         </b-row>
-        <b-row>
-            <b-col md="6" sm="12">
+        <b-row align-h="center" class="content">
+            <b-col md="3" sm="12">
                 <router-link to="/all-sections">
                     <v-toolbar-title
                         data-cy="titleBtn"
                         @click="setLanguage('FR')"
                     >
-                        Je Participe
+                        <div
+                            class="button_participate button_participate_fr"
+                            fluid
+                        ></div>
                     </v-toolbar-title>
                 </router-link>
             </b-col>
-            <b-col md="6" sm="12"
+            <b-col md="3" sm="12"
                 ><router-link to="/all-sections">
                     <v-toolbar-title
                         data-cy="titleBtn"
                         @click="setLanguage('EN')"
                     >
-                        I Participate
-                    </v-toolbar-title>
-                </router-link></b-col
-            >
+                        <div
+                            class="button_participate button_participate_en"
+                            fluid
+                        ></div>
+                    </v-toolbar-title> </router-link
+            ></b-col>
         </b-row>
     </b-container>
 </template>
@@ -58,25 +68,49 @@ export default {
 </script>
 
 
-<style>
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+<style lang="scss">
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+.header {
+    margin-top: 32vh;
+    img {
+        // width: 47vw;
+        // @include media-breakpoint-up(sm) {
+        //     width: 100vw;
+        // }
+    }
 }
-.div1 {
-    grid-area: 2 / 2 / 3 / 5;
+
+.content {
+    margin-top: 15vh;
 }
-.div2 {
-    grid-area: 4 / 2 / 5 / 3;
+.button_participate {
+    height: 11vh;
+    transition: all 0.1s ease-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-breakpoint-down(sm) {
+        margin-top: 5vh;
+    }
 }
-.div3 {
-    grid-area: 4 / 4 / 5 / 5;
+
+.button_participate:hover {
+    cursor: pointer;
 }
-.div4 {
-    grid-area: 4 / 2 / 5 / 4;
+
+.button_participate_fr {
+    background-image: url('~@/assets/navigation/bouton_particpe/fr_participe_off.gif');
+}
+.button_participate_fr:hover {
+    background-image: url('~@/assets/navigation/bouton_particpe/fr_participe_on.gif');
+}
+
+.button_participate_en {
+    background-image: url('~@/assets/navigation/bouton_particpe/en_participe_off.gif');
+}
+.button_participate_en:hover {
+    background-image: url('~@/assets/navigation/bouton_particpe/en_participe_on.gif');
 }
 </style>
 
