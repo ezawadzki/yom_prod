@@ -213,7 +213,7 @@ export default {
             }
         }
 
-        .bg {
+        .bg_text {
             height: 44%;
             bottom: 0;
         }
