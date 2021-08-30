@@ -1,7 +1,5 @@
 <template>
     <div>
-        img : {{ img1 }}
-
         <v-style>
             .answer_1 { background-image: url({{ img1_off }}); } .answer_1:hover
             { background-image: url({{ img1_on }}); } .answer_2 {
@@ -9,10 +7,14 @@
             background-image: url({{ img2_on }}); }
         </v-style>
 
-        binaire {{ type }}
-        <div class="answer answer_1"></div>
-        <div class="answer answer_2"></div>
-
+        <b-row align-h="center">
+            <b-col md="3">
+                <div class="answer answer_1"></div>
+            </b-col>
+            <b-col md="3">
+                <div class="answer answer_2"></div>
+            </b-col>
+        </b-row>
         <!-- <img :src="require(`@imgSrc/binaire/${type}/${type}vert_on.gif`)" /> -->
         <!-- <img :src="require(`@/assets/binaire/${type}/${type}rouge_off.gif`)" /> -->
     </div>
@@ -24,16 +26,16 @@ export default {
     props: ['type'],
     computed: {
         img1_off: function () {
-            return require(`@/assets/binaire/${this.type}/${this.type}vert_off.gif`);
-        },
-        img1_on: function () {
-            return require(`@/assets/binaire/${this.type}/${this.type}vert_on.gif`);
-        },
-        img2_off: function () {
             return require(`@/assets/binaire/${this.type}/${this.type}rouge_off.gif`);
         },
-        img2_on: function () {
+        img1_on: function () {
             return require(`@/assets/binaire/${this.type}/${this.type}rouge_on.gif`);
+        },
+        img2_off: function () {
+            return require(`@/assets/binaire/${this.type}/${this.type}vert_off.gif`);
+        },
+        img2_on: function () {
+            return require(`@/assets/binaire/${this.type}/${this.type}vert_on.gif`);
         },
     },
     components: {

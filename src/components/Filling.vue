@@ -1,16 +1,23 @@
 <template>
     <div>
-        remplissage {{ type }}
         <v-style>
             .answer_1 { background-image: url({{ img_off }}); } .answer_1:hover
             { background-image: url({{ img_on }}); } .answer_1:hover ~ .answer_1
             { background-image: url({{ img_on }});}
         </v-style>
-        <div class="answer answer_1"></div>
-        <div class="answer answer_1"></div>
-        <div class="answer answer_1"></div>
-        <div class="answer answer_1"></div>
-        <div class="answer answer_1"></div>
+        <b-row align-h="center">
+            <b-col class="list-answers">
+                <div class="answer answer_1"></div>
+
+                <div class="answer answer_1"></div>
+
+                <div class="answer answer_1"></div>
+
+                <div class="answer answer_1"></div>
+
+                <div class="answer answer_1"></div>
+            </b-col>
+        </b-row>
     </div>
 </template>
 
@@ -44,6 +51,10 @@ export default {
 <style scoped>
 .answer {
     transition: all 0.1s ease-out;
+    box-sizing: border-box;
+    width: 25%;
+    margin-bottom: 20px;
+    padding: 0px 10px;
 }
 .answer:hover {
     cursor: pointer;
@@ -51,5 +62,15 @@ export default {
 .answer_1 {
     width: 170px;
     height: 170px;
+}
+
+.list-answers {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    margin: 0px -10px;
 }
 </style>

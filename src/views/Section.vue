@@ -1,9 +1,22 @@
 <template>
-    <b-container fluid="sm">
+    <b-container>
         <b-row>
-            <br />
+            <b-col>
+                <div class="logo">
+                    <router-link to="/">
+                        <img
+                            :src="
+                                require(`@/assets/navigation/logo/logo_YOM.png`)
+                            "
+                        />
+                    </router-link>
+                </div>
+            </b-col>
+        </b-row>
+        <b-row>
             <b-col v-if="this.sections.length">
                 <Question
+                    class="questions"
                     v-bind:text="this.sections[currentStep][language]"
                     v-bind:type="this.sections[currentStep]['type']"
                     v-bind:answer="this.sections[currentStep]['answer']"
@@ -81,5 +94,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style  lang="scss">
+.questions {
+    text-align: center;
+}
 </style>

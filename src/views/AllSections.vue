@@ -29,7 +29,7 @@
                                     comments</span
                                 >
                                 <span
-                                    class="bg"
+                                    class="bg_text"
                                     style="background-position: left 10%"
                                 ></span>
                             </div>
@@ -51,7 +51,7 @@
                                     Them, and I</span
                                 >
                                 <span
-                                    class="bg"
+                                    class="bg_text"
                                     style="background-position: left 20%"
                                 ></span>
                             </div>
@@ -72,7 +72,7 @@
                                     >Red, yellow, green and blue</span
                                 >
                                 <span
-                                    class="bg"
+                                    class="bg_text"
                                     style="background-position: left 30%"
                                 ></span>
                             </div>
@@ -94,7 +94,7 @@
                                     comments</span
                                 >
                                 <span
-                                    class="bg"
+                                    class="bg_text"
                                     style="background-position: left 40%"
                                 ></span>
                             </div>
@@ -214,15 +214,8 @@ export default {
         }
 
         .bg {
-            background-image: url('~@/assets/navigation/calque_deterioration/calque_deterioration.png');
-            position: absolute;
-            z-index: 10;
-
-            display: block;
-            width: 100%;
             height: 44%;
             bottom: 0;
-            opacity: 0.8;
         }
 
         .sub-text {

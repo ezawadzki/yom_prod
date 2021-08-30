@@ -1,25 +1,28 @@
 <template>
-    <div>
-        <div>
-            {{ text }}
-            {{ type }}
-            {{ answer }}
-            <div v-if="type === 'binaire'">
-                <Binary
-                    v-bind:type="answer"
-                    @click.native="goToStep()"
-                ></Binary>
-            </div>
+    <div class="question">
+        <b-row class="question-wrapper" align-v="center">
+            <span class="bg_text"></span>
 
-            <div v-else-if="type === 'remplissage'">
-                <Filling
-                    v-bind:type="answer"
-                    @click.native="goToStep()"
-                ></Filling>
-            </div>
-            <br />
-            <!-- <button type="button" @click.prevent="goToStep()">continue</button> -->
-        </div>
+            <b-col>
+                <span class="text">{{ text }}</span>
+            </b-col>
+        </b-row>
+        <b-row class="answers">
+            <b-col>
+                <div v-if="type === 'binaire'">
+                    <Binary
+                        v-bind:type="answer"
+                        @click.native="goToStep()"
+                    ></Binary>
+                </div>
+                <div v-else-if="type === 'remplissage'">
+                    <Filling
+                        v-bind:type="answer"
+                        @click.native="goToStep()"
+                    ></Filling>
+                </div>
+            </b-col>
+        </b-row>
     </div>
 </template>
 
@@ -59,5 +62,24 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
+.question {
+    .question-wrapper {
+        height: 40vh;
+    }
+
+    .text {
+        font-size: 2.9vw;
+    }
+
+    .bg_text {
+        height: 40vh;
+        top: 0;
+        opacity: 0.9;
+    }
+
+    .answers {
+        margin-top: 2vh;
+    }
+}
 </style>

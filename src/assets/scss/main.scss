@@ -30,3 +30,14 @@ a:hover {
         height: 5vh;
     }
 }
+
+.bg_text {
+    background-image: url('~@/assets/navigation/calque_deterioration/calque_deterioration.png');
+    position: absolute;
+    z-index: 10;
+
+    display: block;
+    width: 100%;
+
+    opacity: 0.8;
+}
