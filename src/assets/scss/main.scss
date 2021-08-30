@@ -16,3 +16,17 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+.logo {
+    margin-top: 6vh;
+    margin-left: -7vw;
+
+    @include media-breakpoint-down(sm) {
+        margin-left: auto;
+        margin-left: right;
+    }
+
+    img {
+        height: 5vh;
+    }
+}

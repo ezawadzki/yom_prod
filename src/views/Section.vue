@@ -3,8 +3,6 @@
         <b-row>
             <br />
             <b-col v-if="this.sections.length">
-                currentStep {{ currentStep }}
-                {{ this.sections[currentStep]['type'] }}
                 <Question
                     v-bind:text="this.sections[currentStep][language]"
                     v-bind:type="this.sections[currentStep]['type']"

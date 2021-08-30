@@ -20,8 +20,6 @@ export default {
 </script>
 
 <style lang="scss" >
-
-
 .application {
     background-image: url('./assets/navigation/fond_canson/fond_canson_1920.jpg') !important;
     background-repeat: no-repeat;

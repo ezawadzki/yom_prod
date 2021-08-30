@@ -1,6 +1,20 @@
 <template>
     <b-container id="all-sections">
         <b-row>
+            <b-col>
+                <div class="logo">
+                    <router-link to="/">
+                        <img
+                            :src="
+                                require(`@/assets/navigation/logo/logo_YOM.png`)
+                            "
+                        />
+                    </router-link>
+                </div>
+            </b-col>
+        </b-row>
+
+        <b-row id="sections">
             <b-col md="3" sm="12">
                 <router-link to="/section/1">
                     <v-toolbar-title data-cy="titleBtn">
@@ -116,8 +130,8 @@ export default {
     white-space: inherit !important;
     overflow: visible !important;
 }
-#all-sections {
-    margin-top: 30vh;
+#all-sections #sections {
+    margin-top: 18vh;
     @include media-breakpoint-down(sm) {
         margin-top: 2vh;
     }
