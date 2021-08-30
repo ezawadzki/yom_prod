@@ -1,3 +1,18 @@
-body {
-  border: 1px solid green;
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
+$grey-color: #505050;
+
+@font-face {
+    font-family: 'pangolin';
+    src: url('~@/assets/Pangolin-Regular.ttf') format('ttf');
+}
+
+a {
+    color: $grey-color !important;
+}
+
+a:hover {
+    text-decoration: none;
 }

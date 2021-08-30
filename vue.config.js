@@ -56,6 +56,7 @@ module.exports = {
         if (/\.css$/.test(entry)) return 'style';
         if (/\.woff$/.test(entry)) return 'font';
         if (/\.gif$/.test(entry)) return 'image';
+        if (/\.png$/.test(entry)) return 'image';
         return 'script';
       }
       options[0].include = 'allAssets'
@@ -63,5 +64,14 @@ module.exports = {
       // options[0].fileBlacklist: [/\.files/, /\.to/, /\.exclude/]
       return options
     })
+  },
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `
+          @import "@/assets/scss/main.scss";
+          `
+      }
+    }
   }
 }

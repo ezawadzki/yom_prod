@@ -69,9 +69,6 @@ export default {
 
 
 <style lang="scss">
-@import '~bootstrap/scss/_functions.scss';
-@import '~bootstrap/scss/_variables.scss';
-@import '~bootstrap/scss/mixins/_breakpoints.scss';
 .header {
     margin-top: 32vh;
     img {
