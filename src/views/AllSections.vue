@@ -1,5 +1,5 @@
 <template>
-    <b-container fluid="sm" id="all-sections">
+    <b-container id="all-sections">
         <b-row>
             <b-col md="3" sm="12">
                 <router-link to="/section/1">
@@ -8,7 +8,7 @@
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text"
-                                    >Being evaluated my love</span
+                                    >Being evaluated<br />my love</span
                                 >
                                 <span class="sub-text"
                                     >Likes, rewards, recognition and
@@ -29,7 +29,9 @@
                         <div class="section section2">
                             <div class="img"></div>
                             <div class="text_wrapper">
-                                <span class="text">Evaluation forever</span>
+                                <span class="text"
+                                    >Evaluation<br />forever</span
+                                >
                                 <span class="sub-text"
                                     >Feedback ail takeholders, 360°, You, We
                                     Them, and I</span
@@ -50,7 +52,7 @@
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text"
-                                    >Assignements for the best</span
+                                    >Assignements<br />for the best</span
                                 >
                                 <span class="sub-text"
                                     >Red, yellow, green and blue</span
@@ -70,7 +72,9 @@
                         <div class="section section4">
                             <div class="img"></div>
                             <div class="text_wrapper">
-                                <span class="text">Evaluation forever</span>
+                                <span class="text"
+                                    >Evaluation<br />forever</span
+                                >
                                 <span class="sub-text"
                                     >Likes, rewards, recognition and
                                     comments</span
@@ -108,8 +112,15 @@ export default {
 </script>
 
 <style lang="scss">
+.v-toolbar__title {
+    white-space: inherit !important;
+    overflow: visible !important;
+}
 #all-sections {
     margin-top: 30vh;
+    @include media-breakpoint-down(sm) {
+        margin-top: 2vh;
+    }
     .section {
         text-align: center;
 
@@ -121,6 +132,11 @@ export default {
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 1vh;
+            @include media-breakpoint-down(sm) {
+                width: 44vw;
+                height: 44vw;
+                background-size: 44vw;
+            }
         }
     }
     .section1 {
@@ -174,6 +190,13 @@ export default {
         .text {
             font-size: 1.7vw;
             display: block;
+            line-height: 2vw;
+            min-height: 10vh;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 8vw;
+                line-height: 8vw;
+            }
         }
 
         .bg {
@@ -183,7 +206,7 @@ export default {
 
             display: block;
             width: 100%;
-            height: 20%;
+            height: 44%;
             bottom: 0;
             opacity: 0.8;
         }
@@ -191,6 +214,10 @@ export default {
         .sub-text {
             font-size: 1.1vw;
             display: block;
+            @include media-breakpoint-down(sm) {
+                font-size: 5vw;
+                margin-bottom: 8vh;
+            }
         }
     }
 }
