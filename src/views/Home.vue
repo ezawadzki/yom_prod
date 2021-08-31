@@ -1,14 +1,5 @@
 <template>
-    <!-- <home-hero></home-hero>
-        <home-details></home-details>
-        <home-plans></home-plans> -->
     <b-container>
-        <div v-if="loadingPercent < 100">
-            <div class="progress-bar">
-                <div class="fill" :style="{ width: loaded }">{{ loaded }}</div>
-            </div>
-        </div>
-        <div v-else>Page Loaded</div>
         <b-row align-h="center" class="header">
             <b-col md="8" sm="12">
                 <h1>
@@ -56,52 +47,16 @@ import HomePlans from '@/components/HomePlans';
 
 export default {
     name: 'home',
-    components: {
-        HomeHero,
-        HomeDetails,
-        HomePlans,
-    },
-    data() {
-        return {
-            loadingPercent: 0,
-            loadTime: 0,
-            interval: null,
-        };
-    },
+    components: {},
+
     created: function () {
         // reset all state
         this.$store.dispatch('resetAll');
+    },
 
-        // loader
-        let perfData = window.performance.timing;
-        let estimatedTime = Math.abs(
-            perfData.loadEventEnd - perfData.navigationStart
-        );
-        this.loadTime = parseInt((estimatedTime / 1000) % 60) * 100;
-        this.doProgress();
-    },
-    computed: {
-        loaded() {
-            return this.loadingPercent + '%';
-        },
-    },
-    watch: {
-        loadingPercent(val) {
-            if (val >= 100) {
-                console.log('complete');
-                clearInterval(this.interval);
-            }
-        },
-    },
     methods: {
         setLanguage(language) {
             this.$store.dispatch('setUserLanguage', language);
-        },
-        doProgress() {
-            let step = this.loadTime / 100;
-            this.interval = setInterval(() => {
-                this.loadingPercent++;
-            }, step);
         },
     },
 };
