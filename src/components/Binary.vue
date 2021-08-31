@@ -67,6 +67,8 @@ export default {
         transition: all 0.1s ease-out;
         width: 170px;
         height: 170px;
+        margin-left: auto;
+        margin-right: auto;
         @include media-breakpoint-down(sm) {
             background-size: 30vw;
             width: 34vw;

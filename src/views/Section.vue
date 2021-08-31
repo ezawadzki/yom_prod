@@ -94,7 +94,11 @@ export default {
                     this.$store.getters.sectionsDone
                 );
                 // redirect
-                this.$router.push('/end-category');
+                if (this.$store.getters.sectionsDone.length < 4) {
+                    this.$router.push('/end-category');
+                } else {
+                    this.$router.push('/end');
+                }
             }
             // this.$forceUpdate();
         },

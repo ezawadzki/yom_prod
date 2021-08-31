@@ -1,7 +1,14 @@
 <template>
-    <b-container fluid="sm">
+    <b-container class="end">
+        <v-style>
+            .end { background-image: url({{ img_background }}) }
+        </v-style>
         <b-row>
-
+            <b-col>
+                <a
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://bootstrap-vue.org/docs/components/layout"
+                    >facebook</a
+                >
             </b-col>
         </b-row>
     </b-container>
@@ -11,7 +18,13 @@
 export default {
     name: 'End',
 
-    components: {},
+    components: {
+        'v-style': {
+            render: function (createElement) {
+                return createElement('style', this.$slots.default);
+            },
+        },
+    },
     computed: {
         language() {
             return this.$store.getters.userLanguage;
@@ -19,20 +32,23 @@ export default {
         currentSection() {
             return this.$store.getters.currentSection;
         },
+        img_background: function () {
+            return require(`@/assets/navigation/cartel/ambassadrice/${this.language}_ambassador.gif`);
+        },
     },
     watch: {},
-    props: [,
+    props: [],
 
     data() {
-        return {
-
-        };
+        return {};
     },
-    methods: {
-      
-    },
+    methods: {},
 };
 </script>
 
-<style scoped>
+<style lang="scss">
+.end {
+    height: 100%;
+    background-size: 100%;
+}
 </style>
