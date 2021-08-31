@@ -64,14 +64,14 @@ export default {
         currentSection() {
             return this.$store.getters.currentSection;
         },
-        nbOfSectionsDone() {
+        nbSectionsDone() {
             return this.$store.getters.sectionsDone.length;
         },
         img_background: function () {
-            return require(`@/assets/navigation/cartel/${this.nbOfSectionsDone}.gif`);
+            return require(`@/assets/navigation/cartel/${this.nbSectionsDone}.gif`);
         },
         img_points: function () {
-            return require(`@/assets/navigation/point/${this.nbOfSectionsDone}.gif`);
+            return require(`@/assets/navigation/point/${this.nbSectionsDone}.gif`);
         },
         img_continue_off: function () {
             return require(`@/assets/navigation/bouton_continue/${this.language}_continue_off.gif`);
@@ -85,7 +85,7 @@ export default {
 
     data() {
         return {
-            // nbOfSectionsDone: 1,
+            // nbSectionsDone: 1,
         };
     },
     methods: {},

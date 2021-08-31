@@ -30,11 +30,13 @@
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text"
-                                    >Being evaluated<br />my love</span
+                                    >Assignation<br />forever</span
                                 >
-                                <span class="sub-text"
-                                    >Likes, rewards, recognition and
-                                    comments</span
+                                <span class="sub-text" v-if="language == 'fr'"
+                                    >Socio-politico</span
+                                >
+                                <span class="sub-text" v-if="language == 'en'"
+                                    >Socio-political</span
                                 >
                                 <span
                                     class="bg_text"
@@ -51,12 +53,17 @@
                         <div class="section section2">
                             <div class="img"></div>
                             <div class="text_wrapper">
-                                <span class="text"
-                                    >Evaluation<br />forever</span
+                                <span class="text" v-if="language == 'fr'"
+                                    >Ultracrepidarianisme</span
                                 >
-                                <span class="sub-text"
-                                    >Feedback ail takeholders, 360°, You, We
-                                    Them, and I</span
+                                <span class="text" v-if="language == 'en'"
+                                    >Ultracrepidarianism</span
+                                >
+                                <span class="sub-text" v-if="language == 'fr'"
+                                    >Je donne mon avis sur tout</span
+                                >
+                                <span class="sub-text" v-if="language == 'en'"
+                                    >I give my opinion on everything</span
                                 >
                                 <span
                                     class="bg_text"
@@ -73,11 +80,17 @@
                         <div class="section section3">
                             <div class="img"></div>
                             <div class="text_wrapper">
-                                <span class="text"
-                                    >Assignements<br />for the best</span
+                                <span class="text" v-if="language == 'fr'"
+                                    >Evalué<br />mon amour</span
                                 >
-                                <span class="sub-text"
-                                    >Red, yellow, green and blue</span
+                                <span class="text" v-if="language == 'en'"
+                                    >Evaluate me<br />my love</span
+                                >
+                                <span class="sub-text" v-if="language == 'fr'"
+                                    >Moi, je</span
+                                >
+                                <span class="sub-text" v-if="language == 'en'"
+                                    >Me, myself</span
                                 >
                                 <span
                                     class="bg_text"
@@ -95,12 +108,14 @@
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text"
-                                    >Evaluation<br />forever</span
+                                    >Evaluation<br />for the best</span
                                 >
-                                <span class="sub-text"
-                                    >Likes, rewards, recognition and
-                                    comments</span
-                                >
+                                <span class="sub-text" v-if="language == 'fr'"
+                                    >Métaphysique
+                                </span>
+                                <span class="sub-text" v-if="language == 'en'"
+                                    >Metaphysical
+                                </span>
                                 <span
                                     class="bg_text"
                                     style="background-position: left 40%"
