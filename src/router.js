@@ -43,6 +43,11 @@ const router = new Router({
             component: () => import('./views/Section.vue')
         },
         {
+            path: '/end-category',
+            name: 'end-category',
+            component: () => import('./views/EndCategory.vue')
+        },
+        {
             path: '/join',
             name: 'join',
             component: () => import('./views/Join.vue')

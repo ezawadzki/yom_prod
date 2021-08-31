@@ -15,7 +15,7 @@
         </b-row>
 
         <b-row id="sections">
-            <b-col md="3" sm="12">
+            <b-col md="3" sm="12" v-bind:class="{ done: isDone('1') }">
                 <router-link to="/section/1">
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section1">
@@ -37,7 +37,7 @@
                     </v-toolbar-title>
                 </router-link>
             </b-col>
-            <b-col md="3" sm="12">
+            <b-col md="3" sm="12" v-bind:class="{ done: isDone('2') }">
                 <router-link to="/section/2">
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section2">
@@ -59,7 +59,7 @@
                     </v-toolbar-title>
                 </router-link>
             </b-col>
-            <b-col md="3" sm="12">
+            <b-col md="3" sm="12" v-bind:class="{ done: isDone('3') }">
                 <router-link to="/section/3">
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section3">
@@ -80,7 +80,7 @@
                     </v-toolbar-title>
                 </router-link>
             </b-col>
-            <b-col md="3" sm="12">
+            <b-col md="3" sm="12" v-bind:class="{ done: isDone('4') }">
                 <router-link to="/section/4">
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section4">
@@ -113,6 +113,7 @@ export default {
         language() {
             return this.$store.getters.userLanguage;
         },
+        isDone1() {},
     },
     data() {
         return {};
@@ -120,6 +121,15 @@ export default {
     methods: {
         selectSection(s) {
             console.log('selectSection', s);
+        },
+        isDone(s) {
+            console.log(
+                'this.$store.getters.sectionsDone',
+                this.$store.getters.sectionsDone,
+                this.$store.getters.sectionsDone.includes(s),
+                s
+            );
+            return this.$store.getters.sectionsDone.includes(s);
         },
     },
 };
@@ -226,6 +236,11 @@ export default {
                 margin-bottom: 8vh;
             }
         }
+    }
+
+    .done {
+        opacity: 0.4;
+        pointer-events: none;
     }
 }
 </style>

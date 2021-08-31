@@ -15,6 +15,7 @@ export default new Vuex.Store({
         userRecipes: [],
         language: 'FR',
         currentSection: null,
+        sectionsDone: [],
         currentStep: 0
     },
     mutations: {
@@ -38,6 +39,9 @@ export default new Vuex.Store({
         },
         setCurrentStep(state, step) {
             state.currentStep = step;
+        },
+        setSectionsDone(state, section) {
+            state.sectionsDone.push(section);
         }
     },
     actions: {
@@ -49,6 +53,9 @@ export default new Vuex.Store({
         },
         setUserStep({ commit }, s) {
             commit('setCurrentStep', s);
+        },
+        setUserSectionsDone({ commit }, s) {
+            commit('setSectionsDone', s);
         },
         async getRecipes({ state, commit }, plan) {
             try {
@@ -144,5 +151,11 @@ export default new Vuex.Store({
         userLanguage: state => {
             return state.language;
         },
+        currentSection: state => {
+            return state.currentSection
+        },
+        sectionsDone: state => {
+            return state.sectionsDone
+        }
     }
 });

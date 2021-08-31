@@ -1,9 +1,6 @@
 <template>
     <b-container fluid="sm">
-        <b-row>
-
-            </b-col>
-        </b-row>
+        <b-row> </b-row>
     </b-container>
 </template>
 
@@ -21,16 +18,12 @@ export default {
         },
     },
     watch: {},
-    props: [,
+    props: [],
 
     data() {
-        return {
-
-        };
+        return {};
     },
-    methods: {
-      
-    },
+    methods: {},
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="binary">
         <v-style>
             .answer_1 { background-image: url({{ img1_off }}); } .answer_1:hover
             { background-image: url({{ img1_on }}); } .answer_2 {
@@ -8,10 +8,10 @@
         </v-style>
 
         <b-row align-h="center">
-            <b-col md="3">
+            <b-col md="3" sm="1">
                 <div class="answer answer_1"></div>
             </b-col>
-            <b-col md="3">
+            <b-col md="3" sm="1">
                 <div class="answer answer_2"></div>
             </b-col>
         </b-row>
@@ -56,22 +56,25 @@ export default {
 };
 </script>
 
-<style scoped>
-.answer {
-    transition: all 0.1s ease-out;
-}
-.answer:hover {
-    cursor: pointer;
-}
-.answer_1 {
-    /* background-image: url(var(--bg-img-1)); */
-    width: 170px;
-    height: 170px;
-}
-
-.answer_2 {
-    /* background-image: url('~@/assets/binaire/yaourt/yaourtrouge_off.gif'); */
-    width: 170px;
-    height: 170px;
+<style  lang="scss">
+.binary {
+    @include media-breakpoint-down(sm) {
+        .col-sm-1 {
+            width: auto;
+        }
+    }
+    .answer {
+        transition: all 0.1s ease-out;
+        width: 170px;
+        height: 170px;
+        @include media-breakpoint-down(sm) {
+            background-size: 30vw;
+            width: 34vw;
+            height: 34vw;
+        }
+    }
+    .answer:hover {
+        cursor: pointer;
+    }
 }
 </style>

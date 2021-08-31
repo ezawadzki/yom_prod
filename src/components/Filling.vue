@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="filling">
         <v-style>
             .answer_1 { background-image: url({{ img_off }}); } .answer_1:hover
             { background-image: url({{ img_on }}); } .answer_1:hover ~ .answer_1
@@ -48,29 +48,40 @@ export default {
 };
 </script>
 
-<style scoped>
-.answer {
-    transition: all 0.1s ease-out;
-    box-sizing: border-box;
-    width: 25%;
-    margin-bottom: 20px;
-    padding: 0px 10px;
-}
-.answer:hover {
-    cursor: pointer;
-}
-.answer_1 {
-    width: 170px;
-    height: 170px;
-}
+<style lang="scss">
+.filling {
+    .answer {
+        transition: all 0.1s ease-out;
+        box-sizing: border-box;
+        width: 25%;
+        margin-bottom: 20px;
+        padding: 0px 10px;
+        width: 170px;
+        height: 170px;
+        @include media-breakpoint-down(sm) {
+            background-size: 18vw;
+            width: 18vw;
+            height: 18vw;
+        }
+    }
+    .answer:hover {
+        cursor: pointer;
+    }
 
-.list-answers {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    box-sizing: border-box;
-    margin: 0px -10px;
+    .list-answers {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        box-sizing: border-box;
+        margin: 0px -10px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .col-sm-1 {
+            width: auto;
+        }
+    }
 }
 </style>

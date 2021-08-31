@@ -71,22 +71,30 @@ export default {
         this.$store.dispatch('setUserSection', this.$route.params.section_id);
         this.sections =
             await require(`../data/${this.$route.params.section_id}.json`);
-        this.$store.dispatch('setUserCurrSectionLength', this.sections.length);
+        // this.$store.dispatch('setUserCurrSectionLength', this.sections.length);
     },
-    created: function () {
-        // `this` est une référence à l'instance de vm
-        // sections.map((item) => {
-        //     console.log(item[this.language]);
-        // });
-    },
+    created: function () {},
     methods: {
-        onClickChild() {
-            console.log('onClickChild');
+        async onClickChild() {
             if (this.currentStep < this.sections.length - 1) {
                 this.currentStep += 1;
             } else {
                 // save which section has been done
+                console.log(
+                    'this.$store.getters.currentSection',
+                    this.$store.getters.currentSection
+                );
+                await this.$store.dispatch(
+                    'setUserSectionsDone',
+                    this.$store.getters.currentSection
+                );
+
+                await console.log(
+                    'sectionsDone',
+                    this.$store.getters.sectionsDone
+                );
                 // redirect
+                this.$router.push('/all-sections');
             }
             // this.$forceUpdate();
         },

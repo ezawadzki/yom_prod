@@ -70,6 +70,9 @@ export default {
 
     .text {
         font-size: 2.9vw;
+        @include media-breakpoint-down(sm) {
+            font-size: 7vw;
+        }
     }
 
     .bg_text {
