@@ -65,7 +65,7 @@ export default {
 <style lang="scss">
 .question {
     .question-wrapper {
-        height: 40vh;
+        height: 35vh;
     }
 
     .text {
@@ -76,7 +76,7 @@ export default {
     }
 
     .bg_text {
-        height: 40vh;
+        height: 35vh;
         top: 0;
         opacity: 0.9;
     }

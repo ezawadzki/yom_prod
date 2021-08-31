@@ -54,7 +54,7 @@ export default {
         transition: all 0.1s ease-out;
         box-sizing: border-box;
         width: 25%;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         padding: 0px 10px;
         width: 170px;
         height: 170px;

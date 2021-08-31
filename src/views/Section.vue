@@ -32,6 +32,27 @@
                 ></Question>
             </b-col>
         </b-row>
+        <b-row align-h="center" class="progress-points">
+            <b-col md="1" sm="1" v-for="(item, index) in this.sections">
+                <img
+                    v-if="currentStep < index"
+                    :src="
+                        require(`@/assets/navigation/rond_progression/rondvide/rondvide${
+                            index + 1
+                        }.png`)
+                    "
+                />
+
+                <img
+                    v-else
+                    :src="
+                        require(`@/assets/navigation/rond_progression/rondplein/rondplein${
+                            index + 1
+                        }.png`)
+                    "
+                />
+            </b-col>
+        </b-row>
     </b-container>
 </template>
 
@@ -54,9 +75,9 @@ export default {
         nbSectionsDone() {
             return this.$store.getters.sectionsDone.length;
         },
-        // currentStep() {
-        //     return this.$store.getters.currentStep;
-        // },
+        currentStep() {
+            return this.$store.getters.currentStep;
+        },
     },
     watch: {
         currentStep: function (val) {
@@ -120,5 +141,15 @@ export default {
 <style  lang="scss">
 .questions {
     text-align: center;
+}
+
+.progress-points {
+    margin-top: 10vh;
+    .col-md-1 {
+        max-width: 2% !important;
+    }
+    img {
+        width: 1vw;
+    }
 }
 </style>
