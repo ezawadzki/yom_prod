@@ -13,7 +13,7 @@ export default new Vuex.Store({
         user: null,
         isAuthenticated: false,
         userRecipes: [],
-        language: 'FR',
+        language: 'fr',
         currentSection: null,
         sectionsDone: [],
         currentStep: 0

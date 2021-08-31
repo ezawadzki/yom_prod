@@ -1,97 +1,97 @@
 [
   {
-    "FR": "Regardez-vous les avis avant de choisir une pizzeria ?",
-    "EN": "",
+    "fr": "Regardez-vous les avis avant de choisir une pizzeria ?",
+    "en": "",
     "type": "binaire",
     "answer": "pizza"
   },
   {
-    "FR": "Donnez-vous votre avis lorsque vous sortez de cette pizzeria ?",
-    "EN": "",
+    "fr": "Donnez-vous votre avis lorsque vous sortez de cette pizzeria ?",
+    "en": "",
     "type": "binaire",
     "answer": "pizza"
   },
   {
-    "FR": "Évaluez l’empathie de vos voisin.es de table à la pizzeria.",
-    "EN": "",
+    "fr": "Évaluez l’empathie de vos voisin.es de table à la pizzeria.",
+    "en": "",
     "type": "remplissage",
     "answer": "coeur"
   },
   {
-    "FR": "Évaluez la tonte du jardin public faite par les moutons.",
-    "EN": "",
+    "fr": "Évaluez la tonte du jardin public faite par les moutons.",
+    "en": "",
     "type": "remplissage",
     "answer": "pouce"
   },
   {
-    "FR": "Êtes-vous responsable des tartines au petit déjeuner ?",
-    "EN": "",
+    "fr": "Êtes-vous responsable des tartines au petit déjeuner ?",
+    "en": "",
     "type": "binaire",
     "answer": "tartine"
   },
   {
-    "FR": "Évaluez la mise à disposition des outils pédagogiques par le formateur dans le cadre de votre formation contre le harcèlement.",
-    "EN": "",
+    "fr": "Évaluez la mise à disposition des outils pédagogiques par le formateur dans le cadre de votre formation contre le harcèlement.",
+    "en": "",
     "type": "remplissage",
     "answer": "pouce"
   },
   {
-    "FR": "Êtes-vous satisfait de confirmer que vous n’êtes pas un robot en identifiant des tracteurs ?",
-    "EN": "",
+    "fr": "Êtes-vous satisfait de confirmer que vous n’êtes pas un robot en identifiant des tracteurs ?",
+    "en": "",
     "type": "binaire",
     "answer": "tracteur"
   },
   {
-    "FR": "Êtes-vous satisfait d’entrainer une Intelligence Artificielle en identifiant des tracteurs ?",
-    "EN": "",
+    "fr": "Êtes-vous satisfait d’entrainer une Intelligence Artificielle en identifiant des tracteurs ?",
+    "en": "",
     "type": "binaire",
     "answer": "tracteur"
   },
   {
-    "FR": "Êtes-vous satisfait de participer au développement de l’intelligence artificielle en postant vos photos ?",
-    "EN": "",
+    "fr": "Êtes-vous satisfait de participer au développement de l’intelligence artificielle en postant vos photos ?",
+    "en": "",
     "type": "binaire",
     "answer": "pouce"
   },
   {
-    "FR": "Êtes-vous satisfait de profiler vos “amis” en les likant ?",
-    "EN": "",
+    "fr": "Êtes-vous satisfait de profiler vos “amis” en les likant ?",
+    "en": "",
     "type": "binaire",
     "answer": "coeur"
   },
   {
-    "FR": "Êtes-vous satisfait que vos réseaux sociaux en sachent plus sur vous que vos proches ?",
-    "EN": "",
+    "fr": "Êtes-vous satisfait que vos réseaux sociaux en sachent plus sur vous que vos proches ?",
+    "en": "",
     "type": "binaire",
     "answer": "smiley"
   },
   {
-    "FR": "Participez-vous à l’ultracrépidarianisme (donner son avis tous types de sujets) ?",
-    "EN": "",
+    "fr": "Participez-vous à l’ultracrépidarianisme (donner son avis tous types de sujets) ?",
+    "en": "",
     "type": "binaire",
     "answer": "check"
   },
   {
-    "FR": "Êtes-vous satisfait du nombre de clickworkers travaillant dans l’hémisphère sud  pour nourrir les intelligences artificielles et améliorer votre prédictibilité ?",
-    "EN": "",
+    "fr": "Êtes-vous satisfait du nombre de clickworkers travaillant dans l’hémisphère sud  pour nourrir les intelligences artificielles et améliorer votre prédictibilité ?",
+    "en": "",
     "type": "binaire",
     "answer": "coeur"
   },
   {
-    "FR": "Êtes-vous satisfait de participer à la prédictibilité ?",
-    "EN": "",
+    "fr": "Êtes-vous satisfait de participer à la prédictibilité ?",
+    "en": "",
     "type": "binaire",
     "answer": "check"
   },
   {
-    "FR": "Êtes-vous prédictible ?",
-    "EN": "",
+    "fr": "Êtes-vous prédictible ?",
+    "en": "",
     "type": "binaire",
     "answer": "check"
   },
   {
-    "FR": "Souhaitez-vous atteindre le niveau supérieur ?",
-    "EN": "",
+    "fr": "Souhaitez-vous atteindre le niveau supérieur ?",
+    "en": "",
     "type": "binaire",
     "answer": "coeur"
   }

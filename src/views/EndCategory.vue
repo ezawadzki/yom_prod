@@ -1,6 +1,40 @@
-<template>
-    <b-container fluid="sm">
-        <b-row> </b-row>
+<template >
+    <b-container class="end-category">
+        <v-style>
+            .end-category { background-image: url({{ img_background }}) }
+            .continue { background-image: url({{ img_continue_off }}); }
+            .continue:hover { background-image: url({{ img_continue_on }}); }
+        </v-style>
+        <b-row>
+            <b-col>
+                <div class="logo">
+                    <router-link to="/">
+                        <img
+                            :src="
+                                require(`@/assets/navigation/logo/logo_YOM.png`)
+                            "
+                        />
+                    </router-link>
+                </div>
+            </b-col>
+        </b-row>
+        <b-row align-h="end">
+            <b-col md="2">
+                <div class="points">
+                    <img :src="img_points" />
+                </div>
+            </b-col>
+        </b-row>
+        <b-row align-h="center">
+            <b-col md="3">
+                <div class="continue">
+                    <router-link to="/all-sections">
+                        <div class="continue"></div>
+                    </router-link>
+                </div>
+            </b-col>
+        </b-row>
+        <b-row align-h="center"> </b-row>
     </b-container>
 </template>
 
@@ -8,7 +42,13 @@
 export default {
     name: 'EndCategory',
 
-    components: {},
+    components: {
+        'v-style': {
+            render: function (createElement) {
+                return createElement('style', this.$slots.default);
+            },
+        },
+    },
     computed: {
         language() {
             return this.$store.getters.userLanguage;
@@ -16,16 +56,48 @@ export default {
         currentSection() {
             return this.$store.getters.currentSection;
         },
+        nbOfSectionsDone() {
+            return this.$store.getters.sectionsDone.length;
+        },
+        img_background: function () {
+            return require(`@/assets/navigation/cartel/${this.nbOfSectionsDone}.gif`);
+        },
+        img_points: function () {
+            return require(`@/assets/navigation/point/${this.nbOfSectionsDone}.gif`);
+        },
+        img_continue_off: function () {
+            return require(`@/assets/navigation/bouton_continue/${this.language}_continue_off.gif`);
+        },
+        img_continue_on: function () {
+            return require(`@/assets/navigation/bouton_continue/${this.language}_continue_on.gif`);
+        },
     },
     watch: {},
     props: [],
 
     data() {
-        return {};
+        return {
+            // nbOfSectionsDone: 1,
+        };
     },
     methods: {},
 };
 </script>
 
-<style scoped>
+<style lang="scss">
+.end-category {
+    height: 100%;
+    background-size: 100%;
+
+    .points {
+        margin-top: 26vh;
+    }
+    .win-image {
+        width: 70vw;
+    }
+    .continue {
+        height: 13vh;
+        margin-top: 3vh;
+    }
+}
 </style>

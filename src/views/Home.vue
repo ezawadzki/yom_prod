@@ -18,7 +18,7 @@
                 <router-link to="/all-sections">
                     <v-toolbar-title
                         data-cy="titleBtn"
-                        @click="setLanguage('FR')"
+                        @click="setLanguage('fr')"
                     >
                         <div
                             class="button_participate button_participate_fr"
@@ -31,7 +31,7 @@
                 ><router-link to="/all-sections">
                     <v-toolbar-title
                         data-cy="titleBtn"
-                        @click="setLanguage('EN')"
+                        @click="setLanguage('en')"
                     >
                         <div
                             class="button_participate button_participate_en"
