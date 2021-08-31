@@ -5,10 +5,10 @@
         </v-style>
         <b-row>
             <b-col>
-                <a
+                <!-- <a
                     href="https://www.facebook.com/sharer/sharer.php?u=https://bootstrap-vue.org/docs/components/layout"
                     >facebook</a
-                >
+                > -->
             </b-col>
         </b-row>
     </b-container>
