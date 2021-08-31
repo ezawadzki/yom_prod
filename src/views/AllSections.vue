@@ -1,5 +1,13 @@
 <template>
     <b-container id="all-sections">
+        <div class="grad">
+            <img
+                v-if="nbSectionsDone > 0"
+                :src="
+                    require(`@/assets/navigation/grade/${language}_${nbSectionsDone}.png`)
+                "
+            />
+        </div>
         <b-row>
             <b-col>
                 <div class="logo">
@@ -113,7 +121,9 @@ export default {
         language() {
             return this.$store.getters.userLanguage;
         },
-        isDone1() {},
+        nbSectionsDone() {
+            return this.$store.getters.sectionsDone.length;
+        },
     },
     data() {
         return {};
@@ -123,12 +133,6 @@ export default {
             console.log('selectSection', s);
         },
         isDone(s) {
-            console.log(
-                'this.$store.getters.sectionsDone',
-                this.$store.getters.sectionsDone,
-                this.$store.getters.sectionsDone.includes(s),
-                s
-            );
             return this.$store.getters.sectionsDone.includes(s);
         },
     },

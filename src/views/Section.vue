@@ -1,5 +1,13 @@
 <template>
     <b-container>
+        <div class="grad">
+            <img
+                v-if="nbSectionsDone > 0"
+                :src="
+                    require(`@/assets/navigation/grade/${language}_${nbSectionsDone}.png`)
+                "
+            />
+        </div>
         <b-row>
             <b-col>
                 <div class="logo">
@@ -42,6 +50,9 @@ export default {
         },
         currentSection() {
             return this.$store.getters.currentSection;
+        },
+        nbSectionsDone() {
+            return this.$store.getters.sectionsDone.length;
         },
         // currentStep() {
         //     return this.$store.getters.currentStep;

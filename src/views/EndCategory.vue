@@ -5,6 +5,14 @@
             .continue { background-image: url({{ img_continue_off }}); }
             .continue:hover { background-image: url({{ img_continue_on }}); }
         </v-style>
+        <div class="grad">
+            <img
+                v-if="nbSectionsDone > 0"
+                :src="
+                    require(`@/assets/navigation/grade/${language}_${nbSectionsDone}.png`)
+                "
+            />
+        </div>
         <b-row>
             <b-col>
                 <div class="logo">
