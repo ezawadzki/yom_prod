@@ -56,8 +56,7 @@ export default {
         HomePlans,
     },
     created: function () {
-        // `this` est une référence à l'instance de vm
-        console.log('a is: ' + this.a);
+        this.$store.dispatch('resetAll');
     },
     methods: {
         setLanguage(language) {

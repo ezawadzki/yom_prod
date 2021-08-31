@@ -6,8 +6,8 @@ import router from '@/router';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
-    state: {
+function initialState() {
+    return {
         recipes: [],
         apiUrl: 'https://api.edamam.com/search',
         user: null,
@@ -17,8 +17,15 @@ export default new Vuex.Store({
         currentSection: null,
         sectionsDone: [],
         currentStep: 0
-    },
+    }
+}
+
+export default new Vuex.Store({
+    state: initialState,
     mutations: {
+        reset(state) {
+            Object.assign(state, initialState())
+        },
         setRecipes(state, payload) {
             state.recipes = payload;
         },
@@ -45,6 +52,10 @@ export default new Vuex.Store({
         }
     },
     actions: {
+        resetAll({ commit }) {
+            commit('reset');
+
+        },
         setUserLanguage({ commit }, l) {
             commit('setLanguage', l);
         },
