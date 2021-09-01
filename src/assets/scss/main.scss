@@ -5,12 +5,31 @@
 $grey-color: #505050;
 
 
+// @font-face {
+//     font-family: 'pangolin';
+//     src: url('~@/assets/font/Pangolin-Regular.ttf') format('ttf');
+// }
+
 @font-face {
-    font-family: 'pangolin';
-    src: url('~@/assets/Pangolin-Regular.ttf') format('ttf');
+    font-family: 'Pangolin';
+    src: url('~@/assets/font/Pangolin-Regular.eot');
+    src: url('~@/assets/font/Pangolin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/font/Pangolin-Regular.woff2') format('woff2'),
+        url('~@/assets/font/Pangolin-Regular.woff') format('woff'),
+        url('~@/assets/font/Pangolin-Regular.ttf') format('truetype'),
+        url('~@/assets/font/Pangolin-Regular.svg#Pangolin-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 
+
+.container {
+    @include media-breakpoint-up(lg) {
+        max-width: 1660px !important;
+    }
+}
 
 a {
     color: $grey-color !important;
@@ -32,13 +51,16 @@ a:hover {
 
 .logo {
     margin-top: 6vh;
-    margin-left:1vw;
+    // margin-left:1vw;
     @include media-breakpoint-down(sm) {
         margin-left: auto;
         margin-left: right;
     }
 
+    @include media-breakpoint-down(md) {
+        margin-left:-5vw;
 
+    }
 
     img {
         height: 5vh;
