@@ -1,110 +1,110 @@
 [
   {
-    "fr": "Êtes-vous satisfait de l’onctuosité de votre yaourt du petit déjeuner ?",
-    "en": "",
+    "fr": "Êtes-vous satisfait de l’onctuosité de votre yaourt du petit déjeuner ? ",
+    "en": "Do you think your breakfast yoghurt is creamy enough?",
     "type": "binaire",
     "answer": "yaourt"
   },
   {
     "fr": "Évaluez la fraicheur de la bouteille d’eau distribuée lors du retard de votre train.",
-    "en": "",
+    "en": "How cold was the bottle of water you were given when your train was delayed?",
     "type": "remplissage",
     "answer": "etoile"
   },
   {
     "fr": "Évaluez la croissance de vos plantes d’intérieur.",
-    "en": "",
+    "en": "How well do your house plants grow?",
     "type": "remplissage",
     "answer": "smiley"
   },
   {
-    "fr": "Évaluez le bonbon gout-citron distribué en caisse du restaurant Le Soleil Levant",
-    "en": "",
+    "fr": "Évaluez le bonbon gout-citron distribué en caisse du restaurant Le Soleil Levant.",
+    "en": "How nice was the mint that came with your restaurant bill?",
     "type": "remplissage",
     "answer": "bonbon"
   },
   {
     "fr": "Êtes-vous satisfait de votre dernière livraison ?",
-    "en": "",
+    "en": "Were you satisfied with your last delivery?",
     "type": "binaire",
     "answer": "pouce"
   },
   {
     "fr": "Êtes-vous satisfait de la propreté du véhicule de votre livreur ?",
-    "en": "",
+    "en": "Was the delivery van clean enough?",
     "type": "binaire",
     "answer": "smiley"
   },
   {
     "fr": "Évaluez votre expérience lors de votre déclaration d’impôt sur le revenu.",
-    "en": "",
+    "en": "How would you rate filling out your income tax declaration?",
     "type": "remplissage",
     "answer": "etoile"
   },
   {
     "fr": "Évaluez le plaisir que vous a procuré votre déclaration d’impôt.",
-    "en": "",
+    "en": "Rate the pleasure you get from completing your income tax declaration.",
     "type": "remplissage",
     "answer": "coeur"
   },
   {
-    "fr": "Avez-vous pris le temps de noter votre réparateur de machine à laver ?",
-    "en": "",
+    "fr": "Avez-vous pris le temps de noter votre réparateur de machine à laver ? ",
+    "en": "Did you take the time to rate the washing machine repair man?",
     "type": "binaire",
     "answer": "outil"
   },
   {
-    "fr": "A quelle fréquence participez-vous aux demandes d’évaluation de service.",
-    "en": "",
+    "fr": "A quelle fréquence participez-vous aux demandes d’évaluation de service. ",
+    "en": "How often do you respond to requests to give your opinion on services received?",
     "type": "remplissage",
     "answer": "etoile"
   },
   {
     "fr": "Êtes-vous satisfait d’avoir noté votre réparateur de machine à laver ?",
-    "en": "",
+    "en": "Do you feel happy to have rated the washing machine repair man?",
     "type": "binaire",
     "answer": "outil"
   },
   {
     "fr": "Dans l’ensemble, vos notes sont-elles supérieures ou inférieures à 9/10 ?",
-    "en": "",
+    "en": "Overall, are your marks above or below 9/10?",
     "type": "binaire",
     "answer": "check"
   },
   {
     "fr": "Êtes-vous satisfait que votre réparateur de machine à laver ne reçoive pas de prime à cause de votre note ?",
-    "en": "",
+    "en": "Are you OK with the fact that the washing machine repair man won’t get a bonus because of your mark?",
     "type": "binaire",
     "answer": "outil"
   },
   {
     "fr": "Pensez-vous que les recrutements décidés par un algorithme soient plus équitables ?",
-    "en": "",
+    "en": "Do you think it’s fairer to let an algorithm take charge of recruitment?",
     "type": "binaire",
     "answer": "pouce"
   },
   {
     "fr": "Évaluez votre dernier rendez-vous chez votre praticien, c’est rapide et anonyme.",
-    "en": "",
+    "en": "Rate your last appointment with a medical practitioner, it’s quick and anonymous.",
     "type": "remplissage",
     "answer": "stethoscope"
   },
   {
     "fr": "Êtes-vous satisfait que les décisions de justice se fassent par un algorithme ?",
-    "en": "",
+    "en": "Would you be happy if legal decisions were made by an algorithm?",
     "type": "remplissage",
     "answer": "check"
   },
   {
     "fr": "Les décisions de justice décidées par un algorithme sont-elles plus équitables ?",
-    "en": "",
+    "en": "Would legal decisions made by an algorithm be fairer?",
     "type": "binaire",
     "answer": "check"
   },
   {
     "fr": "Souhaitez-vous atteindre le niveau supérieur ?",
-    "en": "",
+    "en": "Do you want to reach the next level?",
     "type": "binaire",
     "answer": "coeur"
   }
-]
+ ]

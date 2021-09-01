@@ -1,110 +1,98 @@
 [
   {
-    "fr": "Êtes-vous satisfait de l’onctuosité de votre yaourt du petit déjeuner ?",
-    "en": "",
+    "fr": "Êtes-vous responsable de la fermeture de la porte à clef avant d’aller dormir ?",
+    "en": "Are you in charge of making sure the door is locked before going to bed?",
     "type": "binaire",
-    "answer": "yaourt"
+    "answer": "check"
   },
   {
-    "fr": "Évaluez la fraicheur de la bouteille d’eau distribuée lors du retard de votre train.",
-    "en": "",
+    "fr": "Êtes-vous responsable du tri des chaussettes dépareillées ? ",
+    "en": "Is it your job to sort out the odd socks?",
+    "type": "binaire",
+    "answer": "chaussettes"
+  },
+  {
+    "fr": "Évaluez la qualité des graminées qui poussent entre les rails des voies ferrées.",
+    "en": "Rate the quality of the grass growing between the railway tracks.",
     "type": "remplissage",
     "answer": "etoile"
   },
   {
-    "fr": "Évaluez la croissance de vos plantes d’intérieur.",
-    "en": "",
+    "fr": "Évaluez la qualité de la neige. ",
+    "en": "Rate the quality of the snow. ",
     "type": "remplissage",
-    "answer": "smiley"
+    "answer": "neige"
   },
   {
-    "fr": "Évaluez le bonbon gout-citron distribué en caisse du restaurant Le Soleil Levant",
-    "en": "",
+    "fr": "Évaluez la capacité des nuages à créer des formes imaginaires. ",
+    "en": "Rate the ability of clouds to create imaginary shapes.",
     "type": "remplissage",
-    "answer": "bonbon"
+    "answer": "nuage"
   },
   {
-    "fr": "Êtes-vous satisfait de votre dernière livraison ?",
-    "en": "",
+    "fr": "Êtes-vous satisfait de la température ambiante ?",
+    "en": "Are you happy with the room temperature?",
     "type": "binaire",
+    "answer": "coeur"
+  },
+  {
+    "fr": "Évaluez votre niveau de spiritualité.",
+    "en": "Rate your level of spirituality.",
+    "type": "remplissage",
     "answer": "pouce"
   },
   {
-    "fr": "Êtes-vous satisfait de la propreté du véhicule de votre livreur ?",
-    "en": "",
-    "type": "binaire",
+    "fr": "Évaluez la fréquence de vos prières.",
+    "en": "Rate how often you pray.",
+    "type": "remplissage",
+    "answer": "pouce"
+  },
+  {
+    "fr": "Évaluez la mesure de votre silence.",
+    "en": "Rate your measure of silence. ",
+    "type": "remplissage",
     "answer": "smiley"
   },
   {
-    "fr": "Évaluez votre expérience lors de votre déclaration d’impôt sur le revenu.",
-    "en": "",
+    "fr": "Évaluez la mesure de votre colère.",
+    "en": "Rate your measure of anger.",
     "type": "remplissage",
     "answer": "etoile"
   },
   {
-    "fr": "Évaluez le plaisir que vous a procuré votre déclaration d’impôt.",
-    "en": "",
+    "fr": "Évaluez la mesure de votre amour.",
+    "en": "Rate your measure of love.",
     "type": "remplissage",
     "answer": "coeur"
   },
   {
-    "fr": "Avez-vous pris le temps de noter votre réparateur de machine à laver ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "outil"
-  },
-  {
-    "fr": "A quelle fréquence participez-vous aux demandes d’évaluation de service.",
-    "en": "",
-    "type": "remplissage",
-    "answer": "etoile"
-  },
-  {
-    "fr": "Êtes-vous satisfait d’avoir noté votre réparateur de machine à laver ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "outil"
-  },
-  {
-    "fr": "Dans l’ensemble, vos notes sont-elles supérieures ou inférieures à 9/10 ?",
-    "en": "",
+    "fr": "Êtes-vous mesuré ?",
+    "en": "Are you measured?",
     "type": "binaire",
     "answer": "check"
   },
   {
-    "fr": "Êtes-vous satisfait que votre réparateur de machine à laver ne reçoive pas de prime à cause de votre note ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "outil"
-  },
-  {
-    "fr": "Pensez-vous que les recrutements décidés par un algorithme soient plus équitables ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "pouce"
-  },
-  {
-    "fr": "Évaluez votre dernier rendez-vous chez votre praticien, c’est rapide et anonyme.",
-    "en": "",
-    "type": "remplissage",
-    "answer": "stethoscope"
-  },
-  {
-    "fr": "Êtes-vous satisfait que les décisions de justice se fassent par un algorithme ?",
-    "en": "",
-    "type": "remplissage",
-    "answer": "check"
-  },
-  {
-    "fr": "Les décisions de justice décidées par un algorithme sont-elles plus équitables ?",
-    "en": "",
+    "fr": "Êtes-vous mesurable ?",
+    "en": "Can you be measured?",
     "type": "binaire",
     "answer": "check"
+  },
+  {
+    "fr": "Êtes-vous satisfait de la vitesse du temps qui passe ?",
+    "en": "Are you satisfied with how fast time passes? ",
+    "type": "binaire",
+    "answer": "montre"
+  },
+  {
+    "fr": "Êtes-vous satisfait d’avoir déjà passé plusieurs minutes sur ce site ? ",
+    "en": "Are you happy that you’ve already spent several minutes on this site? ",
+    "type": "binaire",
+    "answer": "sablier"
   },
   {
     "fr": "Souhaitez-vous atteindre le niveau supérieur ?",
-    "en": "",
+    "en": "Do you want to reach the next level?",
     "type": "binaire",
     "answer": "coeur"
   }
-]
+ ]

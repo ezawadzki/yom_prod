@@ -1,98 +1,104 @@
 [
   {
-    "fr": "Regardez-vous les avis avant de choisir une pizzeria ?",
-    "en": "",
+    "fr": "Êtes-vous satisfait de la décoration de votre sapin de noël ?",
+    "en": "Are you satisfied with your Christmas tree decorations?",
     "type": "binaire",
-    "answer": "pizza"
+    "answer": "sapin"
   },
   {
-    "fr": "Donnez-vous votre avis lorsque vous sortez de cette pizzeria ?",
-    "en": "",
+    "fr": "Êtes-vous satisfait de votre dernier Noël en famille ? ",
+    "en": "Are you satisfied with your last family Christmas? ",
     "type": "binaire",
-    "answer": "pizza"
+    "answer": "sapin"
   },
   {
-    "fr": "Évaluez l’empathie de vos voisin.es de table à la pizzeria.",
-    "en": "",
+    "fr": "Évaluez les derniers cadeaux que vous avez reçus.",
+    "en": "Rate the last gifts you received.",
+    "type": "remplissage",
+    "answer": "etoile"
+  },
+  {
+    "fr": "Évaluez la qualité de votre relation de couple lors de votre dernière soirée Netflix.",
+    "en": "Rate the quality of your relationship during your last Netflix-watching evening?",
     "type": "remplissage",
     "answer": "coeur"
   },
   {
-    "fr": "Évaluez la tonte du jardin public faite par les moutons.",
-    "en": "",
+    "fr": "Évaluez la qualité de votre dernier rapport sexuel. ",
+    "en": "Rate the last time you had sex. ",
     "type": "remplissage",
-    "answer": "pouce"
+    "answer": "clito"
   },
   {
-    "fr": "Êtes-vous responsable des tartines au petit déjeuner ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "tartine"
-  },
-  {
-    "fr": "Évaluez la mise à disposition des outils pédagogiques par le formateur dans le cadre de votre formation contre le harcèlement.",
-    "en": "",
+    "fr": "Évaluez votre quantité de cranberries séchées consommées en compensation de votre arrêt de la cigarette.  ",
+    "en": "Calculate how many dried cranberries you ate when you gave up smoking.",
     "type": "remplissage",
-    "answer": "pouce"
-  },
-  {
-    "fr": "Êtes-vous satisfait de confirmer que vous n’êtes pas un robot en identifiant des tracteurs ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "tracteur"
-  },
-  {
-    "fr": "Êtes-vous satisfait d’entrainer une Intelligence Artificielle en identifiant des tracteurs ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "tracteur"
-  },
-  {
-    "fr": "Êtes-vous satisfait de participer au développement de l’intelligence artificielle en postant vos photos ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "pouce"
-  },
-  {
-    "fr": "Êtes-vous satisfait de profiler vos “amis” en les likant ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "coeur"
-  },
-  {
-    "fr": "Êtes-vous satisfait que vos réseaux sociaux en sachent plus sur vous que vos proches ?",
-    "en": "",
-    "type": "binaire",
     "answer": "smiley"
   },
   {
-    "fr": "Participez-vous à l’ultracrépidarianisme (donner son avis tous types de sujets) ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "check"
+    "fr": "Évaluez votre dernière session de scrolling sur votre téléphone.",
+    "en": "Rate the last time you sat flicking though pages on your phone.",
+    "type": "remplissage",
+    "answer": "clic"
   },
   {
-    "fr": "Êtes-vous satisfait du nombre de clickworkers travaillant dans l’hémisphère sud  pour nourrir les intelligences artificielles et améliorer votre prédictibilité ?",
-    "en": "",
+    "fr": "Aimez-vous être liké ?",
+    "en": "Do you like to be “liked”?",
     "type": "binaire",
     "answer": "coeur"
   },
   {
-    "fr": "Êtes-vous satisfait de participer à la prédictibilité ?",
-    "en": "",
+    "fr": "Êtes-vous satisfait d’être influencé par les commentaires que vous recevez ?",
+    "en": "Are you happy that you are influenced by the comments you receive?",
+    "type": "binaire",
+    "answer": "pouce"
+  },
+  {
+    "fr": "Êtes-vous satisfait d’influencer les autres par vos commentaires et vos likes ?",
+    "en": "Are you happy that your comments and “likes” influence other people?",
+    "type": "binaire",
+    "answer": "pouce"
+  },
+  {
+    "fr": "Êtes-vous satisfait d’être profilé.e ?",
+    "en": "Are you happy that you are being profiled?",
+    "type": "binaire",
+    "answer": "coeur"
+  },
+  {
+    "fr": "Êtes-vous hors sujet ?",
+    "en": "Are you off-topic?",
     "type": "binaire",
     "answer": "check"
   },
   {
-    "fr": "Êtes-vous prédictible ?",
-    "en": "",
-    "type": "binaire",
-    "answer": "check"
+    "fr": "Évaluez votre besoin de reconnaissance.",
+    "en": "Rate your need to be appreciated.",
+    "type": "remplissage",
+    "answer": "trophee"
+  },
+  {
+    "fr": "Évaluez votre besoin de sentiment d’appartenance.",
+    "en": "Rate your need to feel you belong. ",
+    "type": "remplissage",
+    "answer": "medaille"
+  },
+  {
+    "fr": "Combien d’étoiles vous attribuez-vous ?",
+    "en": "How many stars would you give yourself?",
+    "type": "remplissage",
+    "answer": "etoile"
+  },
+  {
+    "fr": "Évaluez votre capacité à redescendre sur terre. ",
+    "en": "Rate your capacity to come back down to earth. ",
+    "type": "remplissage",
+    "answer": "terre"
   },
   {
     "fr": "Souhaitez-vous atteindre le niveau supérieur ?",
-    "en": "",
+    "en": "Do you want to reach the next level?",
     "type": "binaire",
     "answer": "coeur"
   }
-]
+ ]

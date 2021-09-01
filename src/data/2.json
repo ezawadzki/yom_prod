@@ -1,98 +1,98 @@
 [
   {
-    "fr": "Regardez-vous les avis avant de choisir une pizzeria ?",
-    "en": "",
+    "fr": "Regardez-vous les avis avant de choisir une pizzeria ? ",
+    "en": "Do you look at the reviews before choosing a pizzeria? ",
     "type": "binaire",
     "answer": "pizza"
   },
   {
     "fr": "Donnez-vous votre avis lorsque vous sortez de cette pizzeria ?",
-    "en": "",
+    "en": "Do you leave a review after eating at a pizzeria? ",
     "type": "binaire",
     "answer": "pizza"
   },
   {
     "fr": "Évaluez l’empathie de vos voisin.es de table à la pizzeria.",
-    "en": "",
+    "en": "How would you rate your empathy with the people on the next table at the pizzeria? ",
     "type": "remplissage",
     "answer": "coeur"
   },
   {
-    "fr": "Évaluez la tonte du jardin public faite par les moutons.",
-    "en": "",
+    "fr": "Évaluez la tonte du jardin public faite par les moutons. ",
+    "en": "Rate using sheep instead of lawn mowers to cut the grass in parks.",
     "type": "remplissage",
     "answer": "pouce"
   },
   {
     "fr": "Êtes-vous responsable des tartines au petit déjeuner ?",
-    "en": "",
+    "en": "Are you in charge of making the toast at breakfast? ",
     "type": "binaire",
     "answer": "tartine"
   },
   {
     "fr": "Évaluez la mise à disposition des outils pédagogiques par le formateur dans le cadre de votre formation contre le harcèlement.",
-    "en": "",
+    "en": "Rate the teaching materials made available as part of your harassment prevention training.",
     "type": "remplissage",
     "answer": "pouce"
   },
   {
-    "fr": "Êtes-vous satisfait de confirmer que vous n’êtes pas un robot en identifiant des tracteurs ?",
-    "en": "",
+    "fr": "Êtes-vous satisfait de confirmer que vous n’êtes pas un robot en identifiant des tracteurs ? ",
+    "en": "How do you feel about having to click on pictures of tractors to prove you aren’t a robot?",
     "type": "binaire",
     "answer": "tracteur"
   },
   {
-    "fr": "Êtes-vous satisfait d’entrainer une Intelligence Artificielle en identifiant des tracteurs ?",
-    "en": "",
+    "fr": "Êtes-vous satisfait d’entrainer une Intelligence Artificielle en identifiant des tracteurs ? ",
+    "en": "How do you feel about helping to train artificial intelligence systems by clicking on pictures of tractors?",
     "type": "binaire",
     "answer": "tracteur"
   },
   {
     "fr": "Êtes-vous satisfait de participer au développement de l’intelligence artificielle en postant vos photos ?",
-    "en": "",
+    "en": "How do you feel about helping to develop artificial intelligence systems each time you post a photo?",
     "type": "binaire",
     "answer": "pouce"
   },
   {
     "fr": "Êtes-vous satisfait de profiler vos “amis” en les likant ?",
-    "en": "",
+    "en": "How do you feel about helping to profile your “friends” with each “like”? ",
     "type": "binaire",
     "answer": "coeur"
   },
   {
     "fr": "Êtes-vous satisfait que vos réseaux sociaux en sachent plus sur vous que vos proches ?",
-    "en": "",
+    "en": "Are you happy that your social networks know more about you than your friends and family?",
     "type": "binaire",
     "answer": "smiley"
   },
   {
     "fr": "Participez-vous à l’ultracrépidarianisme (donner son avis tous types de sujets) ?",
-    "en": "",
+    "en": "Are you an ultracrepidarian, in other words are you in the habit of giving your opinion on absolutely everything?",
     "type": "binaire",
     "answer": "check"
   },
   {
     "fr": "Êtes-vous satisfait du nombre de clickworkers travaillant dans l’hémisphère sud  pour nourrir les intelligences artificielles et améliorer votre prédictibilité ?",
-    "en": "",
+    "en": "How do you feel about the number of clickworkers in the Southern Hemisphere whose job it is to feed data to artificial intelligence systems in order to make you more predictable?",
     "type": "binaire",
     "answer": "coeur"
   },
   {
     "fr": "Êtes-vous satisfait de participer à la prédictibilité ?",
-    "en": "",
+    "en": "How do you feel about taking part in making people more predictable?",
     "type": "binaire",
     "answer": "check"
   },
   {
     "fr": "Êtes-vous prédictible ?",
-    "en": "",
+    "en": "Are you predictable?",
     "type": "binaire",
     "answer": "check"
   },
   {
     "fr": "Souhaitez-vous atteindre le niveau supérieur ?",
-    "en": "",
+    "en": "Do you want to reach the next level?",
     "type": "binaire",
     "answer": "coeur"
   }
-]
+ ]

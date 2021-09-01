@@ -11,7 +11,7 @@
             </b-col>
         </b-row>
         <b-row align-h="center" class="content">
-            <b-col md="3" sm="12">
+            <b-col md="3" sm="12" offset-md="3">
                 <router-link to="/all-sections">
                     <v-toolbar-title
                         data-cy="titleBtn"
@@ -36,6 +36,13 @@
                         ></div>
                     </v-toolbar-title> </router-link
             ></b-col>
+
+            <b-col md="2" sm="12" offset-md="1"
+                ><b-img
+                    class="speaker"
+                    :src="require('@/assets/navigation/ampli/ampli.gif')"
+                    fluid
+            /></b-col>
         </b-row>
     </b-container>
 </template>
@@ -103,6 +110,13 @@ export default {
 }
 .button_participate_en:hover {
     background-image: url('~@/assets/navigation/bouton_particpe/en_participe_on.gif');
+}
+
+.speaker {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 5vw;
 }
 </style>
 
