@@ -4,6 +4,7 @@
 
 $grey-color: #505050;
 
+
 @font-face {
     font-family: 'pangolin';
     src: url('~@/assets/Pangolin-Regular.ttf') format('ttf');
@@ -11,11 +12,21 @@ $grey-color: #505050;
 
 a {
     color: $grey-color !important;
+    display: block;
 }
 
 a:hover {
     text-decoration: none;
+    cursor: url('~@/assets/navigation/curseur/main_curseur.png'), pointer; 
 }
+
+.application {
+    cursor: url('~@/assets/navigation/curseur/fleche_curseur.png'), default;
+      
+
+}
+
+
 
 .logo {
     margin-top: 6vh;

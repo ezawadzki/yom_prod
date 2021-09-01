@@ -118,5 +118,9 @@ export default {
     display: block;
     width: 5vw;
 }
+
+.button_participate:hover {
+    cursor: url('~@/assets/navigation/curseur/main_curseur.png'), pointer;
+}
 </style>
 
