@@ -81,5 +81,23 @@ a:hover {
 .grad {
     position:absolute;
     right: 12.5vw;
-    top: -3vh;
+    top: -6vh;
+    img {
+        width: 12.5vw;
+    }
+}
+
+.credits {
+    margin-top: 10vh;
+    font-size: 1.6vw;
+    position: absolute;
+    bottom: 10vh;
+    right: 11vw;
+    span:hover{
+        text-decoration: underline;
+    }
+    .bg_text {
+        top: 0;
+        height: 5vh; 
+    }
 }

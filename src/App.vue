@@ -4,6 +4,16 @@
 
         <v-content transition="slide-x-transition">
             <router-view></router-view>
+            <b-row class="credits" align-h="end">
+                <b-col md="1">
+                    <router-link to="/credits">
+                        <span>Crédits</span>
+                        <span
+                            class="bg_text"
+                            style="background-position: left 30%"
+                        ></span></router-link
+                ></b-col>
+            </b-row>
         </v-content>
     </v-app>
 </template>

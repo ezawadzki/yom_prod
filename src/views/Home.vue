@@ -44,14 +44,14 @@
                     fluid
             /></b-col>
         </b-row>
-        <b-row align-h="end">
-            <b-col md="1">
-                <router-link to="/credits">Crédits</router-link></b-col
-            >
-        </b-row>
+        <audio id="myAudio" controls autoplay>
+            <source
+                :src="require('@/assets/audio/PageAccueil.mp3')"
+                type="audio/mpeg"
+            />
+        </audio>
     </b-container>
 </template>
-
 <script>
 export default {
     name: 'home',
@@ -72,8 +72,11 @@ export default {
 
 
 <style lang="scss">
+audio {
+    display: none;
+}
 .header {
-    margin-top: 32vh;
+    margin-top: 36vh;
 
     h1 {
         text-align: center;
@@ -83,6 +86,7 @@ export default {
         // @include media-breakpoint-up(sm) {
         //     width: 100vw;
         // }
+        width: 100%;
     }
 }
 
@@ -94,6 +98,8 @@ export default {
     transition: all 0.1s ease-out;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 80%;
+
     @include media-breakpoint-down(sm) {
         margin-top: 5vh;
     }

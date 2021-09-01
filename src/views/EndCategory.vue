@@ -27,7 +27,7 @@
             </b-col>
         </b-row>
         <b-row align-h="end">
-            <b-col md="2">
+            <b-col md="3">
                 <div class="points">
                     <img :src="img_points" />
                 </div>
@@ -100,14 +100,18 @@ export default {
 
     .points {
         margin-top: 26vh;
+        margin-left: 2vw;
+        img {
+            width: 14vw;
+        }
     }
     .win-image {
         width: 70vw;
     }
     .continue {
         height: 13vh;
-        margin-top: 3vh;
         background-position: center center;
+        background-size: 100%;
     }
 }
 </style>

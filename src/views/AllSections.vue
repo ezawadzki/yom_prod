@@ -26,7 +26,13 @@
             <b-col md="3" sm="12" v-bind:class="{ done: isDone('1') }">
                 <router-link to="/section/1">
                     <v-toolbar-title data-cy="titleBtn">
-                        <div class="section section1">
+                        <div class="section section1" @mouseover="play1">
+                            <audio
+                                ref="audioElm1"
+                                :src="
+                                    require('@/assets/audio/SurvolRubrique/Distribuez.mp3')
+                                "
+                            ></audio>
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text"
@@ -50,7 +56,13 @@
             <b-col md="3" sm="12" v-bind:class="{ done: isDone('2') }">
                 <router-link to="/section/2">
                     <v-toolbar-title data-cy="titleBtn">
-                        <div class="section section2">
+                        <div class="section section2" @mouseover="play2">
+                            <audio
+                                ref="audioElm2"
+                                :src="
+                                    require('@/assets/audio/SurvolRubrique/Evaluez.mp3')
+                                "
+                            ></audio>
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text" v-if="language == 'fr'"
@@ -77,7 +89,13 @@
             <b-col md="3" sm="12" v-bind:class="{ done: isDone('3') }">
                 <router-link to="/section/3">
                     <v-toolbar-title data-cy="titleBtn">
-                        <div class="section section3">
+                        <div class="section section3" @mouseover="play3">
+                            <audio
+                                ref="audioElm3"
+                                :src="
+                                    require('@/assets/audio/SurvolRubrique/Evaluez.mp3')
+                                "
+                            ></audio>
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text" v-if="language == 'fr'"
@@ -103,6 +121,12 @@
             </b-col>
             <b-col md="3" sm="12" v-bind:class="{ done: isDone('4') }">
                 <router-link to="/section/4">
+                    <audio
+                        ref="audioElm3"
+                        :src="
+                            require('@/assets/audio/SurvolRubrique/Votez.mp3')
+                        "
+                    ></audio>
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section4">
                             <div class="img"></div>
@@ -126,15 +150,25 @@
                 </router-link>
             </b-col>
         </b-row>
-        <b-row>
-            <b-col> <router-link to="/section/3">Crédit</router-link></b-col>
-        </b-row>
     </b-container>
 </template>
 
 <script>
+import { useSound } from '@vueuse/sound';
+import Distribuez from '../assets/audio/SurvolRubrique/Distribuez.mp3';
+import Evaluez from '../assets/audio/SurvolRubrique/Evaluez.mp3';
+import Votez from '../assets/audio/SurvolRubrique/Votez.mp3';
+
 export default {
     name: 'AllSections',
+    // setup() {
+    //     const distribuez = useSound(Distribuez);
+
+    //     return {
+    //         play1,
+    //         stop1,
+    //     };
+    // },
     computed: {
         language() {
             return this.$store.getters.userLanguage;
@@ -152,6 +186,21 @@ export default {
         },
         isDone(s) {
             return this.$store.getters.sectionsDone.includes(s);
+        },
+        playSound() {
+            distribuez.play();
+        },
+        stopSound() {
+            distribuez.stop();
+        },
+        play1: function (event) {
+            this.$refs.audioElm1.play();
+        },
+        play2: function (event) {
+            this.$refs.audioElm2.play();
+        },
+        play3: function (event) {
+            this.$refs.audioElm3.play();
         },
     },
 };

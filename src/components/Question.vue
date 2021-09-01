@@ -9,10 +9,21 @@
         </b-row>
         <b-row class="answers">
             <b-col>
+                <audio
+                    ref="audioElm1"
+                    :src="
+                        require(`@/assets/audio/EtClic/EtClic${
+                            Math.floor(Math.random() * 2) + 1
+                        }.mp3`)
+                    "
+                ></audio>
                 <div v-if="type === 'binaire'">
                     <Binary
                         v-bind:type="answer"
-                        @click.native="goToStep()"
+                        @click.native="
+                            goToStep();
+                            play1();
+                        "
                     ></Binary>
                 </div>
                 <div v-else-if="type === 'remplissage'">
@@ -57,6 +68,9 @@ export default {
         goToStep: function () {
             // this.$store.dispatch('setUserStep', step);
             this.$emit('clicked');
+        },
+        play1: function (event) {
+            this.$refs.audioElm1.play();
         },
     },
 };
