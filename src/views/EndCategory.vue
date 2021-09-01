@@ -96,6 +96,7 @@ export default {
 .end-category {
     height: 100%;
     background-size: 100%;
+    background-position: center center;
 
     .points {
         margin-top: 26vh;
@@ -106,6 +107,7 @@ export default {
     .continue {
         height: 13vh;
         margin-top: 3vh;
+        background-position: center center;
     }
 }
 </style>

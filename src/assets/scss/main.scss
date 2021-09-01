@@ -10,6 +10,8 @@ $grey-color: #505050;
     src: url('~@/assets/Pangolin-Regular.ttf') format('ttf');
 }
 
+
+
 a {
     color: $grey-color !important;
     display: block;
@@ -30,12 +32,13 @@ a:hover {
 
 .logo {
     margin-top: 6vh;
-    margin-left: -7vw;
-
+    margin-left:1vw;
     @include media-breakpoint-down(sm) {
         margin-left: auto;
         margin-left: right;
     }
+
+
 
     img {
         height: 5vh;
@@ -55,6 +58,6 @@ a:hover {
 
 .grad {
     position:absolute;
-    top:-5vh;
     right: 12.5vw;
+    top: -3vh;
 }

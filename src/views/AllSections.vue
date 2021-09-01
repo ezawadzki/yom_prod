@@ -126,9 +126,9 @@
                 </router-link>
             </b-col>
         </b-row>
-        <!-- <b-row>
+        <b-row>
             <b-col> <router-link to="/section/3">Crédit</router-link></b-col>
-        </b-row> -->
+        </b-row>
     </b-container>
 </template>
 
