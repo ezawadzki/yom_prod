@@ -5,6 +5,13 @@
             .continue { background-image: url({{ img_continue_off }}); }
             .continue:hover { background-image: url({{ img_continue_on }}); }
         </v-style>
+
+        <audio id="myAudio" controls autoplay>
+            <source
+                :src="require(`@/assets/audio/Bravo/${nbSectionsDone}.mp3`)"
+                type="audio/mpeg"
+            />
+        </audio>
         <div class="grad">
             <img
                 v-if="nbSectionsDone > 0"

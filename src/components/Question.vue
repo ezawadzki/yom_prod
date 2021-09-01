@@ -11,11 +11,7 @@
             <b-col>
                 <audio
                     ref="audioElm1"
-                    :src="
-                        require(`@/assets/audio/EtClic/EtClic${
-                            Math.floor(Math.random() * 2) + 1
-                        }.mp3`)
-                    "
+                    :src="require(`@/assets/audio/EtClic/EtClic1.mp3`)"
                 ></audio>
                 <div v-if="type === 'binaire'">
                     <Binary
