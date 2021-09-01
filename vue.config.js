@@ -57,6 +57,7 @@ module.exports = {
         if (/\.woff$/.test(entry)) return 'font';
         if (/\.gif$/.test(entry)) return 'image';
         if (/\.png$/.test(entry)) return 'image';
+        if (/\.mp3$/.test(entry)) return 'audio';
         return 'script';
       }
       options[0].include = 'allAssets'
