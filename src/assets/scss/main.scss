@@ -101,12 +101,17 @@ a:hover {
     position: absolute;
     bottom: 10vh;
     right: 11vw;
-    span:hover{
-        text-decoration: underline;
+    a:hover{
+        span {
+            color: #F5E107;
+
+        }
     }
     .bg_text {
         top: 0;
         height: 5vh; 
+        width: 5vw;
+
     }
 
     
