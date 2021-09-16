@@ -104,12 +104,19 @@ export default {
     height: 100%;
     background-size: 100%;
     background-position: center center;
-
+    @include media-breakpoint-down(sm) {
+        background-size: 165%;
+        background-position: center 14vh;
+    }
     .points {
         margin-top: 26vh;
         margin-left: 2vw;
         img {
             width: 14vw;
+            @include media-breakpoint-down(sm) {
+                width: 32vw;
+                float: right;
+            }
         }
     }
     .win-image {
@@ -119,6 +126,10 @@ export default {
         height: 13vh;
         background-position: center center;
         background-size: 100%;
+        @include media-breakpoint-down(sm) {
+            margin-top: 8vh;
+            background-size: 70%;
+        }
     }
 }
 </style>

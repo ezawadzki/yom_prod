@@ -3,6 +3,19 @@
         <v-style>
             .end { background-image: url({{ img_background }}) }
         </v-style>
+        <b-row>
+            <b-col>
+                <div class="logo">
+                    <router-link to="/">
+                        <img
+                            :src="
+                                require(`@/assets/navigation/logo/logo_YOM.png`)
+                            "
+                        />
+                    </router-link>
+                </div>
+            </b-col>
+        </b-row>
         <div class="grad">
             <img
                 v-if="nbSectionsDone > 0"
@@ -58,5 +71,10 @@ export default {
 .end {
     height: 100%;
     background-size: 100%;
+
+    @include media-breakpoint-down(sm) {
+        background-size: 125%;
+        background-position: center;
+    }
 }
 </style>

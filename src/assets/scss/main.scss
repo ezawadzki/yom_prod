@@ -83,8 +83,15 @@ a:hover {
     position:absolute;
     right: 12.5vw;
     top: -6vh;
+    @include media-breakpoint-down(sm) {
+        top: -3vh;
+    }
     img {
         width: 12.5vw;
+        @include media-breakpoint-down(sm) {
+            width: 21.5vw;
+        }
+
     }
 }
 
