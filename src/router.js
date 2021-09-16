@@ -53,6 +53,11 @@ const router = new Router({
             component: () => import('./views/End.vue')
         },
         {
+            path: '/credits',
+            name: 'credits',
+            component: () => import('./views/Credits.vue')
+        },
+        {
             path: '/join',
             name: 'join',
             component: () => import('./views/Join.vue')

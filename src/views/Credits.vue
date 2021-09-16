@@ -1,70 +1,66 @@
 <template>
-    <b-container>
-        <b-row align-h="center" class="header">
-            <b-col md="8" sm="12">
-                <h1>
-                    <b-img
-                        :src="require('@/assets/navigation/logo/logo_YOM.png')"
-                        fluid
-                    />
-                </h1>
+    <b-container class="credits-in">
+        <b-row>
+            <b-col>
+                <div class="logo">
+                    <router-link to="/">
+                        <img
+                            :src="
+                                require(`@/assets/navigation/logo/logo_YOM.png`)
+                            "
+                        />
+                    </router-link>
+                </div>
             </b-col>
         </b-row>
-        <b-row align-h="center" class="content">
-            <b-col md="3" sm="12" offset-md="3">
-                <router-link to="/all-sections">
-                    <v-toolbar-title
-                        data-cy="titleBtn"
-                        @click="setLanguage('fr')"
-                    >
-                        <div
-                            class="button_participate button_participate_fr"
-                            fluid
-                        ></div>
-                    </v-toolbar-title>
-                </router-link>
-            </b-col>
-            <b-col md="3" sm="12"
-                ><router-link to="/all-sections">
-                    <v-toolbar-title
-                        data-cy="titleBtn"
-                        @click="setLanguage('en')"
-                    >
-                        <div
-                            class="button_participate button_participate_en"
-                            fluid
-                        ></div>
-                    </v-toolbar-title> </router-link
-            ></b-col>
+        <div class="content">
+            <b-row class="people">
+                <b-col>
+                    <span class="job">De et Avec : </span>
+                    <span class="name">Magali Desbazeille</span>
+                </b-col>
+            </b-row>
+            <b-row class="people">
+                <b-col>
+                    <span class="job">Développment web : </span>
+                    <span class="name">Emilie Zawadzki</span>
+                </b-col>
+            </b-row>
+            <b-row class="people">
+                <b-col>
+                    <span class="job">Graphisme : </span>
+                    <span class="name">Gabin Traverse</span>
+                </b-col>
+            </b-row>
+            <b-row class="people">
+                <b-col>
+                    <span class="job">Production : </span>
+                    <span class="name">Le jeu de Paume</span>
+                </b-col>
+            </b-row>
+            <b-row class="people">
+                <b-col>
+                    <span class="job">Production déléguée : </span>
+                    <span class="name">Cie ASAP</span>
+                </b-col>
+            </b-row>
+            <br />
+            <br />
 
-            <b-col md="2" sm="12" offset-md="1"
-                ><b-img
-                    class="speaker"
-                    :src="require('@/assets/navigation/ampli/ampli.gif')"
-                    fluid
-            /></b-col>
-        </b-row>
-        <b-row align-h="end">
-            <b-col md="1">
-                <router-link to="/credits">Crédits</router-link></b-col
-            >
-        </b-row>
+            <b-row class="no_data">
+                <b-col>Aucune donnée sur ce site n'est sauvegardé ! </b-col>
+            </b-row>
+            <span class="bg_text" style="background-position: left 40%"></span>
+        </div>
     </b-container>
 </template>
 
 <script>
-import HomeHero from '@/components/HomeHero';
-import HomeDetails from '@/components/HomeDetails';
-import HomePlans from '@/components/HomePlans';
-
 export default {
-    name: 'home',
+    name: 'credits',
     components: {},
 
-    created: function () {
-        // reset all state
-        this.$store.dispatch('resetAll');
-    },
+    created: function () {},
 
     methods: {
         setLanguage(language) {
@@ -76,60 +72,29 @@ export default {
 
 
 <style lang="scss">
-.header {
-    margin-top: 32vh;
+.credits-in {
+    .content {
+        margin-top: 10vh;
+        position: relative;
+        .people {
+            font-size: 3vw;
+            text-align: center;
 
-    h1 {
-        text-align: center;
+            .job {
+                color: #f5e107;
+            }
+        }
+
+        .bg_text {
+            top: 0;
+            height: 100%;
+        }
+
+        .no_data {
+            font-size: 1.5vw;
+            text-align: center;
+        }
     }
-    img {
-        // width: 47vw;
-        // @include media-breakpoint-up(sm) {
-        //     width: 100vw;
-        // }
-    }
-}
-
-.content {
-    margin-top: 15vh;
-}
-.button_participate {
-    height: 11vh;
-    transition: all 0.1s ease-out;
-    background-repeat: no-repeat;
-    background-position: center;
-    @include media-breakpoint-down(sm) {
-        margin-top: 5vh;
-    }
-}
-
-.button_participate:hover {
-    cursor: pointer;
-}
-
-.button_participate_fr {
-    background-image: url('~@/assets/navigation/bouton_particpe/fr_participe_off.gif');
-}
-.button_participate_fr:hover {
-    background-image: url('~@/assets/navigation/bouton_particpe/fr_participe_on.gif');
-}
-
-.button_participate_en {
-    background-image: url('~@/assets/navigation/bouton_particpe/en_participe_off.gif');
-}
-.button_participate_en:hover {
-    background-image: url('~@/assets/navigation/bouton_particpe/en_participe_on.gif');
-}
-
-.speaker {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 5vw;
-}
-
-.button_participate:hover {
-    cursor: url('~@/assets/navigation/curseur/main_curseur.png'), pointer;
 }
 </style>
 
