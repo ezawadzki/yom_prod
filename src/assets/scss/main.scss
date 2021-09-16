@@ -55,12 +55,13 @@ a:hover {
     @include media-breakpoint-down(sm) {
         margin-left: auto;
         margin-left: right;
+        margin-bottom: 9vw;
     }
 
-    @include media-breakpoint-down(md) {
-        margin-left:-5vw;
+    // @include media-breakpoint-down(md) {
+    //     margin-left:-5vw;
 
-    }
+    // }
 
     img {
         height: 5vh;
@@ -99,5 +100,11 @@ a:hover {
     .bg_text {
         top: 0;
         height: 5vh; 
+    }
+
+    
+    @include media-breakpoint-down(sm) {
+        font-size: 7vw;
+        bottom: 6vh;
     }
 }

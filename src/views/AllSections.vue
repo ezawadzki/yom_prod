@@ -211,107 +211,112 @@ export default {
     white-space: inherit !important;
     overflow: visible !important;
 }
-#all-sections #sections {
-    margin-top: 18vh;
+#all-sections {
     @include media-breakpoint-down(sm) {
-        margin-top: 2vh;
+        margin-bottom: 10vh;
     }
-    .section {
-        text-align: center;
+    #sections {
+        margin-top: 18vh;
+        @include media-breakpoint-down(sm) {
+            margin-top: 2vh;
+        }
+        .section {
+            text-align: center;
 
-        .img {
-            width: 10vw;
-            height: 10vw;
-            transition: all 0.1s ease-out;
-            background-size: 10vw;
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 1vh;
-            @include media-breakpoint-down(sm) {
-                width: 44vw;
-                height: 44vw;
-                background-size: 44vw;
+            .img {
+                width: 10vw;
+                height: 10vw;
+                transition: all 0.1s ease-out;
+                background-size: 10vw;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 1vh;
+                @include media-breakpoint-down(sm) {
+                    width: 44vw;
+                    height: 44vw;
+                    background-size: 44vw;
+                }
             }
         }
-    }
-    .section1 {
-        .img {
-            background-image: url('~@/assets/navigation/bouton_rubrique/artcile1_off.png') !important;
-        }
-    }
-
-    .section1:hover {
-        .img {
-            background-image: url('~@/assets/navigation/bouton_rubrique/artcile1_on.png') !important;
-        }
-    }
-
-    .section2 {
-        .img {
-            background-image: url('~@/assets/navigation/bouton_rubrique/artcile2_off.png') !important;
-        }
-    }
-
-    .section2:hover {
-        .img {
-            background-image: url('~@/assets/navigation/bouton_rubrique/artcile2_on.png') !important;
-        }
-    }
-
-    .section3 {
-        .img {
-            background-image: url('~@/assets/navigation/bouton_rubrique/artcile3_off.png') !important;
-        }
-    }
-
-    .section3:hover {
-        .img {
-            background-image: url('~@/assets/navigation/bouton_rubrique/artcile3_on.png') !important;
-        }
-    }
-
-    .section4 {
-        .img {
-            background-image: url('~@/assets/navigation/bouton_rubrique/artcile4_off.png') !important;
-        }
-    }
-
-    .section4:hover {
-        .img {
-            background-image: url('~@/assets/navigation/bouton_rubrique/artcile4_on.png') !important;
-        }
-    }
-    .text_wrapper {
-        .text {
-            font-size: 1.7vw;
-            display: block;
-            line-height: 2vw;
-            min-height: 10vh;
-
-            @include media-breakpoint-down(sm) {
-                font-size: 8vw;
-                line-height: 8vw;
+        .section1 {
+            .img {
+                background-image: url('~@/assets/navigation/bouton_rubrique/artcile1_off.png') !important;
             }
         }
 
-        .bg_text {
-            height: 44%;
-            bottom: 0;
-        }
-
-        .sub-text {
-            font-size: 1.1vw;
-            display: block;
-            @include media-breakpoint-down(sm) {
-                font-size: 5vw;
-                margin-bottom: 8vh;
+        .section1:hover {
+            .img {
+                background-image: url('~@/assets/navigation/bouton_rubrique/artcile1_on.png') !important;
             }
         }
-    }
 
-    .done {
-        opacity: 0.4;
-        pointer-events: none;
+        .section2 {
+            .img {
+                background-image: url('~@/assets/navigation/bouton_rubrique/artcile2_off.png') !important;
+            }
+        }
+
+        .section2:hover {
+            .img {
+                background-image: url('~@/assets/navigation/bouton_rubrique/artcile2_on.png') !important;
+            }
+        }
+
+        .section3 {
+            .img {
+                background-image: url('~@/assets/navigation/bouton_rubrique/artcile3_off.png') !important;
+            }
+        }
+
+        .section3:hover {
+            .img {
+                background-image: url('~@/assets/navigation/bouton_rubrique/artcile3_on.png') !important;
+            }
+        }
+
+        .section4 {
+            .img {
+                background-image: url('~@/assets/navigation/bouton_rubrique/artcile4_off.png') !important;
+            }
+        }
+
+        .section4:hover {
+            .img {
+                background-image: url('~@/assets/navigation/bouton_rubrique/artcile4_on.png') !important;
+            }
+        }
+        .text_wrapper {
+            .text {
+                font-size: 1.7vw;
+                display: block;
+                line-height: 2vw;
+                min-height: 10vh;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 8vw;
+                    line-height: 8vw;
+                }
+            }
+
+            .bg_text {
+                height: 44%;
+                bottom: 0;
+            }
+
+            .sub-text {
+                font-size: 1.1vw;
+                display: block;
+                @include media-breakpoint-down(sm) {
+                    font-size: 5vw;
+                    margin-bottom: 8vh;
+                }
+            }
+        }
+
+        .done {
+            opacity: 0.4;
+            pointer-events: none;
+        }
     }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <b-container>
+    <b-container id="section-in">
         <div class="grad">
             <img
                 v-if="nbSectionsDone > 0"
@@ -139,17 +139,33 @@ export default {
 </script>
 
 <style  lang="scss">
-.questions {
-    text-align: center;
-}
-
-.progress-points {
-    margin-top: 10vh;
-    .col-md-1 {
-        max-width: 2% !important;
+#section-in {
+    .questions {
+        text-align: center;
     }
-    img {
-        width: 1vw;
+
+    .progress-points {
+        margin-top: 10vh;
+        @include media-breakpoint-down(sm) {
+            position: absolute;
+            bottom: 14vh;
+            left: 0;
+        }
+
+        .col-md-1 {
+            max-width: 2% !important;
+        }
+        .col-sm-1 {
+            @include media-breakpoint-down(sm) {
+                padding: 2vw;
+            }
+        }
+        img {
+            width: 1vw;
+            @include media-breakpoint-down(sm) {
+                width: 2vw;
+            }
+        }
     }
 }
 </style>

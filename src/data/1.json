@@ -92,7 +92,7 @@
   {
     "fr": "Êtes-vous satisfait que les décisions de justice se fassent par un algorithme ?",
     "en": "Would you be happy if legal decisions were made by an algorithm?",
-    "type": "remplissage",
+    "type": "binaire",
     "answer": "check"
   },
   {

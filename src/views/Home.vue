@@ -70,13 +70,16 @@ export default {
 };
 </script>
 
-
 <style lang="scss">
 audio {
     display: none;
 }
 .header {
     margin-top: 36vh;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 16vh;
+    }
 
     h1 {
         text-align: center;
@@ -128,6 +131,11 @@ audio {
     margin-right: auto;
     display: block;
     width: 5vw;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 5vh;
+        width: 10vw;
+    }
 }
 
 .button_participate:hover {
