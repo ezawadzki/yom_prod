@@ -27,10 +27,10 @@
     "fr": "Évaluez la qualité de votre dernier rapport sexuel. ",
     "en": "Rate the last time you had sex. ",
     "type": "remplissage",
-    "answer": "clito"
+    "answer": "clitoris"
   },
   {
-    "fr": "Évaluez votre quantité de cranberries séchées consommées en compensation de votre arrêt de la cigarette.  ",
+    "fr": "Évaluez votre quantité de cranberries séchées consommée en compensation de votre arrêt de la cigarette.  ",
     "en": "Calculate how many dried cranberries you ate when you gave up smoking.",
     "type": "remplissage",
     "answer": "smiley"

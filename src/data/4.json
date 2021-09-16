@@ -9,7 +9,7 @@
     "fr": "Êtes-vous responsable du tri des chaussettes dépareillées ? ",
     "en": "Is it your job to sort out the odd socks?",
     "type": "binaire",
-    "answer": "chaussettes"
+    "answer": "chaussette"
   },
   {
     "fr": "Évaluez la qualité des graminées qui poussent entre les rails des voies ferrées.",
