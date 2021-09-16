@@ -29,6 +29,11 @@ $grey-color: #505050;
     @include media-breakpoint-up(lg) {
         max-width: 1660px !important;
     }
+
+    @media screen 
+    and (min-width: 2588px)   { 
+        max-width: 2550px !important;
+    }
 }
 
 a {
