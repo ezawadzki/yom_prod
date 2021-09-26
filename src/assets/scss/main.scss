@@ -27,7 +27,7 @@ $grey-color: #505050;
 
 .container {
     @include media-breakpoint-up(lg) {
-        max-width: 1660px !important;
+        max-width: 1260px !important;
     }
 
     @media screen 
