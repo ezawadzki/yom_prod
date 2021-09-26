@@ -78,9 +78,9 @@
     "answer": "check"
   },
   {
-    "fr": "Êtes-vous satisfait de la vitesse du temps qui passe ?",
-    "en": "Are you satisfied with how fast time passes? ",
-    "type": "binaire",
+    "fr": "Évaluez la qualité de la vitesse du temps qui passe ?",
+    "en": "Rate the quality of the speed of time passing?",
+    "type": "remplissage",
     "answer": "montre"
   },
   {
