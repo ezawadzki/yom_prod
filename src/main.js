@@ -15,7 +15,7 @@ Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
-/*
+
 const app = new Vue({
     router,
     store,
@@ -24,4 +24,3 @@ const app = new Vue({
 if (window.Cypress) {
     window.app = app;
 }
-*/
