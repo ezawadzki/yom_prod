@@ -51,7 +51,7 @@
 // vue.config.js
 module.exports = {
   chainWebpack: config => {
-    config.plugin('preload').tap(options => {
+    config.plugin('prefetch').tap(options => {
       options[0].as = (entry) => {
         if (/\.css$/.test(entry)) return 'style';
         if (/\.woff$/.test(entry)) return 'font';
