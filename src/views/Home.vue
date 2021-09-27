@@ -81,12 +81,6 @@ export default {
         setLanguage(language) {
             this.$store.dispatch('setUserLanguage', language);
         },
-        playSound() {
-            distribuez.play();
-        },
-        stopSound() {
-            distribuez.stop();
-        },
         play1: function (event) {
             this.$refs.audioElm1.play();
         },

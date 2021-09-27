@@ -142,20 +142,10 @@
 
 <script>
 import { useSound } from '@vueuse/sound';
-import Distribuez from '../assets/audio/SurvolRubrique/Distribuez.mp3';
-import Evaluez from '../assets/audio/SurvolRubrique/Evaluez.mp3';
-import Votez from '../assets/audio/SurvolRubrique/Votez.mp3';
+
 
 export default {
     name: 'AllSections',
-    // setup() {
-    //     const distribuez = useSound(Distribuez);
-
-    //     return {
-    //         play1,
-    //         stop1,
-    //     };
-    // },
     computed: {
         language() {
             return this.$store.getters.userLanguage;
@@ -173,12 +163,6 @@ export default {
         },
         isDone(s) {
             return this.$store.getters.sectionsDone.includes(s);
-        },
-        playSound() {
-            distribuez.play();
-        },
-        stopSound() {
-            distribuez.stop();
         },
         play1: function (event) {
             this.$refs.audioElm1.play();
