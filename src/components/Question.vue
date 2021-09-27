@@ -11,8 +11,9 @@
             <b-col>
                 <audio
                     ref="audioElm1"
-                    :src="require(`@/assets/audio/EtClic/EtClic1.mp3`)"
+                    :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/04-${language}-Clic/${language}-clic${rnd(1,6)}.mp3`)"
                 ></audio>
+                
                 <div v-if="type === 'binaire'">
                     <Binary
                         v-bind:type="answer"
@@ -59,7 +60,12 @@ export default {
             currentStep: 0,
         };
     },
-    computed: {},
+    computed: {
+        language() {
+            return this.$store.getters.userLanguage;
+        },
+
+    },
     methods: {
         goToStep: function () {
             // this.$store.dispatch('setUserStep', step);
@@ -67,6 +73,9 @@ export default {
         },
         play1: function (event) {
             this.$refs.audioElm1.play();
+        },
+        rnd(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;;
         },
     },
 };
