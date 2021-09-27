@@ -5,6 +5,7 @@
                 :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/03-${language}-OuvertureRubrique/${language}-EvaluezMaintenant1.mp3`)"
                 type="audio/mpeg"
             />
+
         </audio>
         <div class="grad">
             <img
@@ -32,7 +33,7 @@
             <b-col md="3" sm="12" v-bind:class="{ done: isDone('1') }">
                 <router-link to="/section/1">
                     <v-toolbar-title data-cy="titleBtn">
-                        <div class="section section1" @mouseover="play1">
+                        <div class="section section1" >
 
                             <div class="img"></div>
                             <div class="text_wrapper">
@@ -57,7 +58,7 @@
             <b-col md="3" sm="12" v-bind:class="{ done: isDone('2') }">
                 <router-link to="/section/2">
                     <v-toolbar-title data-cy="titleBtn">
-                        <div class="section section2" @mouseover="play2">
+                        <div class="section section2" >
 
                             <div class="img"></div>
                             <div class="text_wrapper">
@@ -85,7 +86,7 @@
             <b-col md="3" sm="12" v-bind:class="{ done: isDone('3') }">
                 <router-link to="/section/3">
                     <v-toolbar-title data-cy="titleBtn">
-                        <div class="section section3" @mouseover="play3">
+                        <div class="section section3" >
                            
                             <div class="img"></div>
                             <div class="text_wrapper">

@@ -56,7 +56,7 @@
                     fluid
             /></b-col>
         </b-row>
-        <audio id="myAudio" controls autoplay>
+        <audio id="myAudio" controls autoplay ref="yom_app">
             <source
                 :src="require('@/assets/audio2/AUDIO-FICHIERS-fr/01-fr-PageAccueil/fr-VotreAvis-HautParleur.mp3')"
                 type="audio/mpeg"
@@ -68,7 +68,10 @@
 export default {
     name: 'home',
     components: {},
+    mounted: function() {
+        this.$refs.yom_app.click();
 
+    },
     created: function () {
         // reset all state
         this.$store.dispatch('resetAll');
