@@ -152,28 +152,25 @@ export default {
         },
         nbSectionsDone() {
             return this.$store.getters.sectionsDone.length;
-        },
+        }
     },
     data() {
         return {};
     },
     methods: {
-        selectSection(s) {
-            console.log('selectSection', s);
-        },
         isDone(s) {
             return this.$store.getters.sectionsDone.includes(s);
         },
-        play1: function (event) {
+        play1 () {
             this.$refs.audioElm1.play();
         },
-        play2: function (event) {
+        play2 () {
             this.$refs.audioElm2.play();
         },
-        play3: function (event) {
+        play3 () {
             this.$refs.audioElm3.play();
-        },
-    },
+        }
+    }
 };
 </script>
 
