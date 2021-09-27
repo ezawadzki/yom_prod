@@ -23,7 +23,7 @@
             </b-row>
             <b-row class="people">
                 <b-col>
-                    <span v-if="language == 'fr'" class="job">Développment web : </span>
+                    <span v-if="language == 'fr'" class="job">Développement web : </span>
                     <span v-if="language == 'en'" class="job">Programming : </span>
                     <span class="name">Emilie Zawadzki</span>
                 </b-col>
@@ -38,7 +38,7 @@
             <b-row class="people">
                 <b-col>
                     <span  class="job">Production : </span>
-                    <span class="name">Le jeu de Paume, Cie ASAP</span>
+                    <span class="name">Jeu de Paume, Cie ASAP</span>
                 </b-col>
             </b-row>
             
