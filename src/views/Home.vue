@@ -17,23 +17,35 @@
                         data-cy="titleBtn"
                         @click="setLanguage('fr')"
                     >
-                        <div
+                        <div  @mouseover="play1"
                             class="button_participate button_participate_fr"
                             fluid
                         ></div>
+                        <audio
+                        ref="audioElm1"
+                        :src="
+                            require('@/assets/audio2/AUDIO-FICHIERS-FR/02-FR-JeParticipe/FR-JeParticipe1.mp3')
+                        "
+                    ></audio>
                     </v-toolbar-title>
                 </router-link>
             </b-col>
             <b-col md="3" sm="12"
-                ><router-link to="/all-sections">
+                ><router-link to="/all-sections" > 
                     <v-toolbar-title
                         data-cy="titleBtn"
                         @click="setLanguage('en')"
                     >
-                        <div
+                        <div @mouseover="play2"
                             class="button_participate button_participate_en"
                             fluid
                         ></div>
+                        <audio
+                        ref="audioElm2"
+                        :src="
+                            require('@/assets/audio2/AUDIO-FICHIERS-EN/02-EN-IParticipe/EN-JeParticipe1.mp3')
+                        "
+                    ></audio>
                     </v-toolbar-title> </router-link
             ></b-col>
 
@@ -46,7 +58,7 @@
         </b-row>
         <audio id="myAudio" controls autoplay>
             <source
-                :src="require('@/assets/audio/PageAccueil.mp3')"
+                :src="require('@/assets/audio2/AUDIO-FICHIERS-FR/01-FR-PageAccueil/FR-VotreAvis-HautParleur.mp3')"
                 type="audio/mpeg"
             />
         </audio>
@@ -65,6 +77,18 @@ export default {
     methods: {
         setLanguage(language) {
             this.$store.dispatch('setUserLanguage', language);
+        },
+        playSound() {
+            distribuez.play();
+        },
+        stopSound() {
+            distribuez.stop();
+        },
+        play1: function (event) {
+            this.$refs.audioElm1.play();
+        },
+        play2: function (event) {
+            this.$refs.audioElm2.play();
         },
     },
 };
