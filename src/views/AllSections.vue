@@ -1,5 +1,11 @@
 <template>
     <b-container id="all-sections">
+        <audio id="myAudio" controls autoplay>
+            <source
+                :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/03-${language}-OuvertureRubrique/${language}-EvaluezMaintenant1.mp3`)"
+                type="audio/mpeg"
+            />
+        </audio>
         <div class="grad">
             <img
                 v-if="nbSectionsDone > 0"
@@ -27,12 +33,7 @@
                 <router-link to="/section/1">
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section1" @mouseover="play1">
-                            <audio
-                                ref="audioElm1"
-                                :src="
-                                    require('@/assets/audio/SurvolRubrique/Distribuez.mp3')
-                                "
-                            ></audio>
+
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text"
@@ -57,12 +58,7 @@
                 <router-link to="/section/2">
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section2" @mouseover="play2">
-                            <audio
-                                ref="audioElm2"
-                                :src="
-                                    require('@/assets/audio/SurvolRubrique/Evaluez.mp3')
-                                "
-                            ></audio>
+
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text" v-if="language == 'fr'"
@@ -90,12 +86,7 @@
                 <router-link to="/section/3">
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section3" @mouseover="play3">
-                            <audio
-                                ref="audioElm3"
-                                :src="
-                                    require('@/assets/audio/SurvolRubrique/Evaluez.mp3')
-                                "
-                            ></audio>
+                           
                             <div class="img"></div>
                             <div class="text_wrapper">
                                 <span class="text" v-if="language == 'fr'"
@@ -121,12 +112,7 @@
             </b-col>
             <b-col md="3" sm="12" v-bind:class="{ done: isDone('4') }">
                 <router-link to="/section/4">
-                    <audio
-                        ref="audioElm3"
-                        :src="
-                            require('@/assets/audio/SurvolRubrique/Votez.mp3')
-                        "
-                    ></audio>
+
                     <v-toolbar-title data-cy="titleBtn">
                         <div class="section section4">
                             <div class="img"></div>

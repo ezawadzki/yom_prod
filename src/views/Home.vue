@@ -24,7 +24,7 @@
                         <audio
                         ref="audioElm1"
                         :src="
-                            require('@/assets/audio2/AUDIO-FICHIERS-FR/02-FR-JeParticipe/FR-JeParticipe1.mp3')
+                            require('@/assets/audio2/AUDIO-FICHIERS-fr/02-fr-JeParticipe/fr-JeParticipe1.mp3')
                         "
                     ></audio>
                     </v-toolbar-title>
@@ -43,7 +43,7 @@
                         <audio
                         ref="audioElm2"
                         :src="
-                            require('@/assets/audio2/AUDIO-FICHIERS-EN/02-EN-IParticipe/EN-JeParticipe1.mp3')
+                            require('@/assets/audio2/AUDIO-FICHIERS-en/02-en-IParticipe/en-JeParticipe1.mp3')
                         "
                     ></audio>
                     </v-toolbar-title> </router-link
@@ -58,7 +58,7 @@
         </b-row>
         <audio id="myAudio" controls autoplay>
             <source
-                :src="require('@/assets/audio2/AUDIO-FICHIERS-FR/01-FR-PageAccueil/FR-VotreAvis-HautParleur.mp3')"
+                :src="require('@/assets/audio2/AUDIO-FICHIERS-fr/01-fr-PageAccueil/fr-VotreAvis-HautParleur.mp3')"
                 type="audio/mpeg"
             />
         </audio>
