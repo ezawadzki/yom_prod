@@ -14,7 +14,7 @@ const router = new Router({
             name: 'home',
             component: Home
         },
-        {
+        /*{
             path: '/about',
             name: 'about',
             component: () => import('./views/About.vue'),
@@ -31,7 +31,7 @@ const router = new Router({
             path: '/sign-in',
             name: 'signin',
             component: () => import('./views/Signin.vue')
-        },
+        },*/
         {
             path: '/all-sections',
             name: 'all-sections',
@@ -57,11 +57,11 @@ const router = new Router({
             name: 'credits',
             component: () => import('./views/Credits.vue')
         },
-        {
+        /*{
             path: '/join',
             name: 'join',
             component: () => import('./views/Join.vue')
-        }
+        }*/
     ]
 });
 

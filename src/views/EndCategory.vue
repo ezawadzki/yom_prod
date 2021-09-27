@@ -8,7 +8,7 @@
 
         <audio id="myAudio" controls autoplay>
             <source
-                :src="require(`@/assets/audio/Bravo/${nbSectionsDone}.mp3`)"
+                :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/05-${language}-BravoX4/${language}-${nbSectionsDone}.mp3`)"
                 type="audio/mpeg"
             />
         </audio>

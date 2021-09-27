@@ -3,6 +3,12 @@
         <v-style>
             .end { background-image: url({{ img_background }}) }
         </v-style>
+        <audio id="myAudio" controls autoplay>
+            <source
+                :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/05-${language}-BravoX4/${language}-4.mp3`)"
+                type="audio/mpeg"
+            />
+        </audio>
         <b-row>
             <b-col>
                 <div class="logo">

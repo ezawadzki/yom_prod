@@ -2,7 +2,7 @@
     <b-container id="all-sections">
         <audio id="myAudio" controls autoplay>
             <source
-                :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/03-${language}-OuvertureRubrique/${language}-EvaluezMaintenant1.mp3`)"
+                :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/03-${language}-OuvertureRubrique/${language}-${nbSectionsDone}.mp3`)"
                 type="audio/mpeg"
             />
 
