@@ -1,13 +1,6 @@
 <template>
     <b-container>
-       <embed :src="require('@/assets/audio2/silence.mp3')" type="audio/mp3" autostart="true" hidden="true">
-       <iframe :src="require('@/assets/audio2/silence.mp3')" allow="autoplay" id="audio"></iframe>
-        <audio id="myAudio" controls autoplay ref="yom_app">
-            <source
-                :src="require('@/assets/audio2/AUDIO-FICHIERS-fr/01-fr-PageAccueil/fr-VotreAvis-HautParleur.mp3')"
-                type="audio/mpeg"
-            />
-        </audio>
+  
         <b-row align-h="center" class="header">
             <b-col md="8" sm="12">
                 <h1>
