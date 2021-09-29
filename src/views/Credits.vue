@@ -17,27 +17,28 @@
             <b-row class="people">
                 <b-col>
                     <span v-if="language == 'fr'" class="job">Conception artistique, dessin et voix : </span>
-                    <span v-if="language == 'en'" class="job">Artistic design, drawing and voice off : </span>
+                    <span v-if="language == 'en'" class="job">Artistic design, drawing and voice off: </span>
                     <span class="name">Magali Desbazeille</span>
                 </b-col>
             </b-row>
             <b-row class="people">
                 <b-col>
                     <span v-if="language == 'fr'" class="job">Développement web : </span>
-                    <span v-if="language == 'en'" class="job">Programming : </span>
+                    <span v-if="language == 'en'" class="job">Programming: </span>
                     <span class="name">Emilie Zawadzki</span>
                 </b-col>
             </b-row>
             <b-row class="people">
                 <b-col>
                     <span v-if="language == 'fr'" class="job">Graphisme : </span>
-                    <span v-if="language == 'en'" class="job">Graphic design : </span>
+                    <span v-if="language == 'en'" class="job">Graphic design: </span>
                     <span class="name">Gabin Traverse</span>
                 </b-col>
             </b-row>
             <b-row class="people">
                 <b-col>
-                    <span  class="job">Production : </span>
+                    <span v-if="language == 'fr'" class="job">Production :</span>
+                    <span v-if="language == 'en'" class="job">Production: </span>
                     <span class="name">Jeu de Paume, Cie ASAP</span>
                 </b-col>
             </b-row>
