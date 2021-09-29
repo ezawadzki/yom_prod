@@ -88,7 +88,7 @@ export default {
 </script>
 
 <style lang="scss">
-iframe, audio {
+audio {
     display: none;
 }
 .header {

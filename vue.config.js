@@ -55,7 +55,6 @@ module.exports = {
       options[0].as = (entry) => {
         if (/\.css$/.test(entry)) return 'style';
         if (/\.woff$/.test(entry)) return 'font';
-
         if (/\.gif$/.test(entry)) return 'image';
         if (/\.png$/.test(entry)) return 'image';
         if (/\.mp3$/.test(entry)) return 'audio';

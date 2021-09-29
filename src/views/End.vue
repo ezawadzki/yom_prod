@@ -30,15 +30,19 @@
                 "
             />
         </div>
-        <b-row>
-            <b-col>
-                <!-- <a
-                    href="https://www.facebook.com/sharer/sharer.php?u=https://bootstrap-vue.org/docs/components/layout"
-                    >facebook</a
-                > -->
+        <b-row class="social">
+            <b-col md="3">
+                <div class="fb-share-button" data-href="https://yom.desbazeille.fr/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyom.desbazeille.fr%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"></a></div>
             </b-col>
+            <b-col md="3" > 
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" target="_blank" data-text="Your Opinion Matters 2 ! Votre avis nous intéresse !" data-url="https://yom.desbazeille.fr/" data-show-count="false"></a>
+            </b-col>
+
+        
         </b-row>
+        
     </b-container>
+
 </template>
 
 <script>
@@ -82,5 +86,54 @@ export default {
         background-size: 125%;
         background-position: center;
     }
+
+    .social {
+        width: 50%;
+        position: absolute;
+        top: 32vw;
+        left: 38vw;
+
+        .fb-share-button {
+            background-image: url('~@/assets/navigation/logo_reseau/facebook/facebook_off.gif');
+            background-size: 23%;
+            height: 25vh;
+            width: 25vw;
+            .fb-xfbml-parse-ignore {
+                height: 11vh;
+                    width: 6vw;
+            }
+
+
+            a {
+                    height: 11vh;
+                    width: 40vw;
+            }
+            &:hover {
+                background-image: url('~@/assets/navigation/logo_reseau/facebook/facebook_on.gif');
+            }
+        }
+
+
+        .twitter-share-button {
+
+            background-image: url('~@/assets/navigation/logo_reseau/twitter/twitter_off.gif') !important;
+            background-size: 100%;
+             
+            height: 12vh;
+            width: 6vw;
+        
+            &:hover {
+                background-image: url('~@/assets/navigation/logo_reseau/twitter/twitter_on.gif')  !important;
+                
+            }
+            .btn {
+                display: none !important;
+            }
+        }
+
+        
+    }
+
+    
 }
 </style>
