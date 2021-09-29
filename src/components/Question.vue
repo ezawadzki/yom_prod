@@ -11,7 +11,7 @@
             <b-col>
                 <audio
                     ref="audioElm1"
-                    :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/04-${language}-Clic/${language}-clic${rnd(1,6)}.mp3`)"
+                    :src="require(`@/assets/audio2/AUDIO-FICHIERS-${language}/04-${language}-Clic/${language}-clic${rnd(1,4)}.mp3`)"
                 ></audio>
                 
                 <div v-if="type === 'binaire'">
@@ -26,7 +26,11 @@
                 <div v-else-if="type === 'remplissage'">
                     <Filling
                         v-bind:type="answer"
-                        @click.native="goToStep()"
+
+                        @click.native="
+                            goToStep();
+                            play1();
+                        "
                     ></Filling>
                 </div>
             </b-col>
